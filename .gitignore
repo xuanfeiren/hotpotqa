@@ -1,0 +1,32 @@
+# External codebases (cloned repos, install via install.sh)
+dspy-repo/
+gepa-repo/
+openevolve/
+Trace/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Logs & generated output
+logs/
+artifacts/
+data/
+media/
+prompt_opt/results/
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment / secrets
+.env
+.env.*

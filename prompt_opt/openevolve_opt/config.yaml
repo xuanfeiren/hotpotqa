@@ -1,0 +1,64 @@
+# Configuration for HotpotQA prompt optimization with OpenEvolve
+
+# General settings
+max_iterations: 50
+checkpoint_interval: 10
+log_level: "INFO"
+diff_based_evolution: false  # Full rewrite mode (best for prompt optimization)
+max_code_length: 10000
+language: "text"  # Text mode for prompt evolution
+
+# LLM Configuration
+llm:
+  api_base: "https://generativelanguage.googleapis.com/v1beta/openai/"
+  models:
+    - name: "gemini-2.5-flash-lite"
+      weight: 1.0
+
+  temperature: 0.4
+  max_tokens: 4096
+  timeout: 150
+  retries: 3
+
+# Prompt Configuration
+prompt:
+  template_dir: null  # Use default templates
+  num_top_programs: 3
+  num_diverse_programs: 2
+  include_artifacts: true
+
+  system_message: |
+    You are an expert prompt engineer optimizing a prompt for multi-hop question answering on HotpotQA.
+    
+    Your improvements should:
+    * Ensure the prompt produces SHORT, CONCISE answers (typically 1-5 words) - not full sentences.
+    * Guide the model to synthesize information from multiple paragraphs.
+    * Improve accuracy by reducing ambiguity.
+    * Keep the {context} and {question} placeholders intact.
+    * Encourage the model to identify the exact answer rather than paraphrasing.
+    
+    Return only the improved prompt text. Do not include explanations or additional comments.
+
+# Database Configuration
+database:
+  population_size: 100
+  archive_size: 50
+  num_islands: 4
+
+  feature_dimensions: ["prompt_length", "reasoning_strategy"]
+  feature_bins: 10
+
+  elite_selection_ratio: 0.1
+  exploration_ratio: 0.3
+  exploitation_ratio: 0.6
+
+  migration_interval: 10
+  migration_rate: 0.1
+
+# Evaluator Configuration
+evaluator:
+  timeout: 1800
+  max_retries: 3
+  parallel_evaluations: 4
+  cascade_evaluation: true
+  cascade_thresholds: [0.8]  # Stage 1 must achieve 80% to proceed to stage 2

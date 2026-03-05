@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hotpotqa-opt"
+version = "0.1.0"
+description = "Prompt optimization for HotpotQA using Trace, GEPA, and OpenEvolve"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+
+dependencies = [
+  "numpy>=1.21.0",
+  "datasets>=1.17.0",
+  "pandas",
+  "requests",
+  "litellm",
+  "trace-opt",
+  "openai>=2.8.1",
+  "torch>=2.0.0",
+  "dspy",
+  "gepa",
+  "openevolve",
+  "wandb",
+]
+
+[tool.setuptools]
+py-modules = ["hotpotqa_eval"]
+
+[tool.uv.sources]
+trace-opt = { path = "Trace", editable = true }
+dspy = { path = "dspy-repo", editable = true }
+gepa = { path = "gepa-repo", editable = true }
+openevolve = { path = "openevolve", editable = true }
