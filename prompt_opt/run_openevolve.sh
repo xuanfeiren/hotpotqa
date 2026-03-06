@@ -23,7 +23,7 @@ fi
 
 mkdir -p "${OPENEVOLVE_OUTPUT_DIR}/logs"
 
-uv run python openevolve/openevolve-run.py \
+uv run python ../openevolve/openevolve-run.py \
     prompt_opt/openevolve_initial_prompt.txt \
     prompt_opt/openevolve_opt.py \
     --config prompt_opt/openevolve_config.yaml \
