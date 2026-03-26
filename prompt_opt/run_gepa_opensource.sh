@@ -3,7 +3,7 @@
 # Usage: bash prompt_opt/run_gepa_opensource.sh [RUN_NUM]
 
 RUN_NUM=${1:-1}
-REFLECTION_MODEL="gpt-oss-20b"
+REFLECTION_MODEL="openai/gpt-oss-20b/gpt-oss-20b"
 OUTPUT_DIR="prompt_opt/results/gepa_${REFLECTION_MODEL}/gepa_${RUN_NUM}"
 LOG_DIR="${OUTPUT_DIR}/logs"
 REFLECTION_API_BASE="http://127.0.0.1:8000/v1"
