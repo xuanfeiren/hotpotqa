@@ -112,6 +112,10 @@ def main():
     parser.add_argument("--api_base", type=str,
                         default="https://generativelanguage.googleapis.com/v1beta/openai/",
                         help="API base URL")
+    parser.add_argument("--reflection_api_base", type=str, default=None,
+                        help="API base URL for reflection model (defaults to --api_base)")
+    parser.add_argument("--reflection_api_key", type=str, default=None,
+                        help="API key for reflection model (defaults to GEMINI/OPENAI key)")
     parser.add_argument("--output_dir", type=str, default="prompt_opt/results/gepa", help="Output directory")
     parser.add_argument("--log_dir", type=str, default="prompt_opt/results/gepa/logs", help="GEPA log directory")
     parser.add_argument("--run_num", type=int, default=1, help="Run number for experimental tracking")
@@ -145,10 +149,17 @@ def main():
     )
     dspy.configure(lm=task_lm)
 
+    reflection_api_base = args.reflection_api_base or args.api_base
+    reflection_api_key = (
+        args.reflection_api_key
+        or os.environ.get("GEMINI_API_KEY")
+        or os.environ.get("OPENAI_API_KEY")
+    )
+    print(f"Configuring reflection LM: {args.reflection_model} @ {reflection_api_base}")
     reflection_lm = dspy.LM(
         model=f"openai/{args.reflection_model}",
-        api_base=args.api_base,
-        api_key=os.environ.get("GEMINI_API_KEY") or os.environ.get("OPENAI_API_KEY"),
+        api_base=reflection_api_base,
+        api_key=reflection_api_key,
         temperature=1.0,
         max_tokens=16000,
     )
