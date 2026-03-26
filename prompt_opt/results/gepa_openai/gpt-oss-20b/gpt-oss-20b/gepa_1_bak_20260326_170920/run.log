@@ -1,0 +1,545 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026/03/26 17:09:22 INFO dspy.teleprompt.gepa.gepa: Running GEPA for approx 2000 metric calls of the program. This amounts to 10.00 full evals on the train+val set.
+2026/03/26 17:09:22 INFO dspy.teleprompt.gepa.gepa: Using 100 examples for tracking Pareto scores. You can consider using a smaller sample of the valset to allow GEPA to explore more diverse solutions within the same budget. GEPA requires you to provide the smallest valset that is just large enough to match your downstream task distribution, while providing as large trainset as possible.
+Backing up existing output directory to: prompt_opt/results/gepa_openai/gpt-oss-20b/gpt-oss-20b/gepa_1_bak_20260326_170920
+Configuring DSPy with model: gemini-2.5-flash-lite
+Configuring reflection LM: openai/gpt-oss-20b/gpt-oss-20b @ http://127.0.0.1:8000/v1
+Loading 100 HotpotQA tasks...
+Loaded 100 tasks.
+Training set: 100 examples
+Validation set: 100 examples
+
+Original instruction:
+Answer the question based on the context.
+
+Starting GEPA optimization...
+[92mRunning customized GEPA...[0m
+GEPA Optimization:   0%|          | 0/2000 [00:00<?, ?rollouts/s]2026/03/26 17:09:23 INFO dspy.evaluate.evaluate: Average Metric: 75.0 / 100 (75.0%)
+2026/03/26 17:09:23 INFO dspy.teleprompt.gepa.gepa: Iteration 0: Base program full valset score: 0.75 over 100 / 100 examples
+GEPA Optimization:   5%|▌         | 100/2000 [00:01<00:19, 96.66rollouts/s]2026/03/26 17:09:23 INFO dspy.teleprompt.gepa.gepa: Iteration 1: Selected program 0 score: 0.75
+  0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 1 (100.0%):   0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 2 (50.0%):  10%|█         | 1/10 [00:00<00:00, 9198.04it/s]Average Metric: 2.00 / 3 (66.7%):  20%|██        | 2/10 [00:00<00:00, 11634.69it/s]Average Metric: 3.00 / 4 (75.0%):  30%|███       | 3/10 [00:00<00:00, 13428.93it/s]Average Metric: 4.00 / 5 (80.0%):  40%|████      | 4/10 [00:00<00:00, 14807.78it/s]Average Metric: 5.00 / 6 (83.3%):  50%|█████     | 5/10 [00:00<00:00, 15815.63it/s]Average Metric: 6.00 / 7 (85.7%):  60%|██████    | 6/10 [00:00<00:00, 16644.06it/s]Average Metric: 7.00 / 8 (87.5%):  70%|███████   | 7/10 [00:00<00:00, 17179.71it/s]Average Metric: 8.00 / 9 (88.9%):  80%|████████  | 8/10 [00:00<00:00, 17725.53it/s]Average Metric: 9.00 / 10 (90.0%):  90%|█████████ | 9/10 [00:00<00:00, 5125.42it/s]Average Metric: 9.00 / 10 (90.0%): 100%|██████████| 10/10 [00:00<00:00, 5507.95it/s]2026/03/26 17:09:23 INFO dspy.evaluate.evaluate: Average Metric: 9.0 / 10 (90.0%)
+2026/03/26 17:09:26 INFO dspy.teleprompt.gepa.gepa: Iteration 1: Exception during reflection/proposal: litellm.NotFoundError: NotFoundError: OpenAIException - The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.
+2026/03/26 17:09:26 INFO dspy.teleprompt.gepa.gepa: Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 725, in completion
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 653, in completion
+    ) = self.make_sync_openai_chat_completion_request(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        openai_client=openai_client,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        logging_obj=logging_obj,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/logging_utils.py", line 149, in sync_wrapper
+    result = func(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 471, in make_sync_openai_chat_completion_request
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 453, in make_sync_openai_chat_completion_request
+    raw_response = openai_client.chat.completions.with_raw_response.create(
+        **data, timeout=timeout
+    )
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_legacy_response.py", line 364, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1192, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<47 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.', 'type': 'NotFoundError', 'param': 'model', 'code': 404}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 1973, in completion
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 1946, in completion
+    response = openai_chat_completions.completion(
+        model=model,
+    ...<15 lines>...
+        custom_llm_provider=custom_llm_provider,
+    )
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 736, in completion
+    raise OpenAIError(
+    ...<4 lines>...
+    )
+litellm.llms.openai.common_utils.OpenAIError: Error code: 404 - {'error': {'message': 'The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.', 'type': 'NotFoundError', 'param': 'model', 'code': 404}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1207, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 3452, in completion
+    raise exception_type(
+          ~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        extra_kwargs=kwargs,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2301, in exception_type
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 465, in exception_type
+    raise NotFoundError(
+    ...<5 lines>...
+    )
+litellm.exceptions.NotFoundError: litellm.NotFoundError: NotFoundError: OpenAIException - The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 131, in propose
+    new_texts = self.propose_new_texts(curr_prog, reflective_dataset, predictor_names_to_update)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 82, in propose_new_texts
+    new_texts[name] = InstructionProposalSignature.run(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lm=self.reflection_lm,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        },
+        ^^
+    )["new_instruction"]
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/base.py", line 48, in run
+    lm_out = lm(full_prompt).strip()
+             ~~^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/teleprompt/gepa/gepa.py", line 563, in <lambda>
+    reflection_lm=(lambda x: self.reflection_lm(x)[0]) if self.reflection_lm is not None else None,
+                             ~~~~~~~~~~~~~~~~~~^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/utils/callback.py", line 326, in sync_wrapper
+    return fn(instance, *args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/base_lm.py", line 91, in __call__
+    response = self.forward(prompt=prompt, messages=messages, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/lm.py", line 158, in forward
+    results = completion(
+        request=dict(model=self.model, messages=messages, **kwargs),
+        num_retries=self.num_retries,
+        cache=litellm_cache_args,
+    )
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/cache.py", line 249, in sync_wrapper
+    result = fn(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/lm.py", line 359, in litellm_completion
+    return litellm.completion(
+           ~~~~~~~~~~~~~~~~~~^
+        cache=cache,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        **request,
+        ^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1312, in wrapper
+    return litellm.completion_with_retries(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 3490, in completion_with_retries
+    return retryer(original_function, *args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1332, in wrapper
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1207, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 3452, in completion
+    raise exception_type(
+          ~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        extra_kwargs=kwargs,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2301, in exception_type
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 465, in exception_type
+    raise NotFoundError(
+    ...<5 lines>...
+    )
+litellm.exceptions.NotFoundError: litellm.NotFoundError: NotFoundError: OpenAIException - The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.
+
+2026/03/26 17:09:26 INFO dspy.teleprompt.gepa.gepa: Iteration 1: Reflective mutation did not propose a new candidate
+GEPA Optimization:   6%|▌         | 110/2000 [00:04<01:30, 20.96rollouts/s]2026/03/26 17:09:26 INFO dspy.teleprompt.gepa.gepa: Iteration 2: Selected program 0 score: 0.75
+
+  0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 0.00 / 1 (0.0%):   0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 2 (50.0%):  10%|█         | 1/10 [00:00<00:00, 8112.77it/s]Average Metric: 2.00 / 3 (66.7%):  20%|██        | 2/10 [00:00<00:00, 10605.07it/s]Average Metric: 3.00 / 4 (75.0%):  30%|███       | 3/10 [00:00<00:00, 12570.34it/s]Average Metric: 4.00 / 5 (80.0%):  40%|████      | 4/10 [00:00<00:00, 13876.94it/s]Average Metric: 4.00 / 6 (66.7%):  50%|█████     | 5/10 [00:00<00:00, 14926.35it/s]Average Metric: 5.00 / 7 (71.4%):  60%|██████    | 6/10 [00:00<00:00, 15640.66it/s]Average Metric: 6.00 / 8 (75.0%):  70%|███████   | 7/10 [00:00<00:00, 16429.84it/s]Average Metric: 6.00 / 9 (66.7%):  80%|████████  | 8/10 [00:00<00:00, 17024.06it/s]Average Metric: 7.00 / 10 (70.0%):  90%|█████████ | 9/10 [00:00<00:00, 5691.05it/s]Average Metric: 7.00 / 10 (70.0%): 100%|██████████| 10/10 [00:00<00:00, 6041.92it/s]2026/03/26 17:09:26 INFO dspy.evaluate.evaluate: Average Metric: 7.0 / 10 (70.0%)
+2026/03/26 17:09:29 INFO dspy.teleprompt.gepa.gepa: Iteration 2: Exception during reflection/proposal: litellm.NotFoundError: NotFoundError: OpenAIException - The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.
+2026/03/26 17:09:29 INFO dspy.teleprompt.gepa.gepa: Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 725, in completion
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 653, in completion
+    ) = self.make_sync_openai_chat_completion_request(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        openai_client=openai_client,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        logging_obj=logging_obj,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/logging_utils.py", line 149, in sync_wrapper
+    result = func(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 471, in make_sync_openai_chat_completion_request
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 453, in make_sync_openai_chat_completion_request
+    raw_response = openai_client.chat.completions.with_raw_response.create(
+        **data, timeout=timeout
+    )
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_legacy_response.py", line 364, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1192, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<47 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.', 'type': 'NotFoundError', 'param': 'model', 'code': 404}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 1973, in completion
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 1946, in completion
+    response = openai_chat_completions.completion(
+        model=model,
+    ...<15 lines>...
+        custom_llm_provider=custom_llm_provider,
+    )
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 736, in completion
+    raise OpenAIError(
+    ...<4 lines>...
+    )
+litellm.llms.openai.common_utils.OpenAIError: Error code: 404 - {'error': {'message': 'The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.', 'type': 'NotFoundError', 'param': 'model', 'code': 404}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1207, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 3452, in completion
+    raise exception_type(
+          ~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        extra_kwargs=kwargs,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2301, in exception_type
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 465, in exception_type
+    raise NotFoundError(
+    ...<5 lines>...
+    )
+litellm.exceptions.NotFoundError: litellm.NotFoundError: NotFoundError: OpenAIException - The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 131, in propose
+    new_texts = self.propose_new_texts(curr_prog, reflective_dataset, predictor_names_to_update)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 82, in propose_new_texts
+    new_texts[name] = InstructionProposalSignature.run(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lm=self.reflection_lm,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        },
+        ^^
+    )["new_instruction"]
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/base.py", line 48, in run
+    lm_out = lm(full_prompt).strip()
+             ~~^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/teleprompt/gepa/gepa.py", line 563, in <lambda>
+    reflection_lm=(lambda x: self.reflection_lm(x)[0]) if self.reflection_lm is not None else None,
+                             ~~~~~~~~~~~~~~~~~~^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/utils/callback.py", line 326, in sync_wrapper
+    return fn(instance, *args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/base_lm.py", line 91, in __call__
+    response = self.forward(prompt=prompt, messages=messages, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/lm.py", line 158, in forward
+    results = completion(
+        request=dict(model=self.model, messages=messages, **kwargs),
+        num_retries=self.num_retries,
+        cache=litellm_cache_args,
+    )
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/cache.py", line 249, in sync_wrapper
+    result = fn(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/lm.py", line 359, in litellm_completion
+    return litellm.completion(
+           ~~~~~~~~~~~~~~~~~~^
+        cache=cache,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        **request,
+        ^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1312, in wrapper
+    return litellm.completion_with_retries(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 3490, in completion_with_retries
+    return retryer(original_function, *args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1332, in wrapper
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1207, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 3452, in completion
+    raise exception_type(
+          ~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        extra_kwargs=kwargs,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2301, in exception_type
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 465, in exception_type
+    raise NotFoundError(
+    ...<5 lines>...
+    )
+litellm.exceptions.NotFoundError: litellm.NotFoundError: NotFoundError: OpenAIException - The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.
+
+2026/03/26 17:09:29 INFO dspy.teleprompt.gepa.gepa: Iteration 2: Reflective mutation did not propose a new candidate
+GEPA Optimization:   6%|▌         | 120/2000 [00:07<02:43, 11.50rollouts/s]2026/03/26 17:09:29 INFO dspy.teleprompt.gepa.gepa: Iteration 3: Selected program 0 score: 0.75
+
+  0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 1 (100.0%):   0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 2.00 / 2 (100.0%):  10%|█         | 1/10 [00:00<00:00, 9446.63it/s]Average Metric: 3.00 / 3 (100.0%):  20%|██        | 2/10 [00:00<00:00, 12246.14it/s]Average Metric: 4.00 / 4 (100.0%):  30%|███       | 3/10 [00:00<00:00, 14169.95it/s]Average Metric: 5.00 / 5 (100.0%):  40%|████      | 4/10 [00:00<00:00, 15635.80it/s]Average Metric: 5.00 / 6 (83.3%):  50%|█████     | 5/10 [00:00<00:00, 16710.37it/s] Average Metric: 6.00 / 7 (85.7%):  60%|██████    | 6/10 [00:00<00:00, 17672.63it/s]Average Metric: 7.00 / 8 (87.5%):  70%|███████   | 7/10 [00:00<00:00, 18407.60it/s]Average Metric: 8.00 / 9 (88.9%):  80%|████████  | 8/10 [00:00<00:00, 19011.01it/s]Average Metric: 9.00 / 10 (90.0%):  90%|█████████ | 9/10 [00:00<00:00, 5729.05it/s]Average Metric: 9.00 / 10 (90.0%): 100%|██████████| 10/10 [00:00<00:00, 6140.10it/s]2026/03/26 17:09:29 INFO dspy.evaluate.evaluate: Average Metric: 9.0 / 10 (90.0%)
+2026/03/26 17:09:32 INFO dspy.teleprompt.gepa.gepa: Iteration 3: Exception during reflection/proposal: litellm.NotFoundError: NotFoundError: OpenAIException - The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.
+2026/03/26 17:09:32 INFO dspy.teleprompt.gepa.gepa: Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 725, in completion
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 653, in completion
+    ) = self.make_sync_openai_chat_completion_request(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        openai_client=openai_client,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        logging_obj=logging_obj,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/logging_utils.py", line 149, in sync_wrapper
+    result = func(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 471, in make_sync_openai_chat_completion_request
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 453, in make_sync_openai_chat_completion_request
+    raw_response = openai_client.chat.completions.with_raw_response.create(
+        **data, timeout=timeout
+    )
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_legacy_response.py", line 364, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1192, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<47 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.', 'type': 'NotFoundError', 'param': 'model', 'code': 404}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 1973, in completion
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 1946, in completion
+    response = openai_chat_completions.completion(
+        model=model,
+    ...<15 lines>...
+        custom_llm_provider=custom_llm_provider,
+    )
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 736, in completion
+    raise OpenAIError(
+    ...<4 lines>...
+    )
+litellm.llms.openai.common_utils.OpenAIError: Error code: 404 - {'error': {'message': 'The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.', 'type': 'NotFoundError', 'param': 'model', 'code': 404}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1207, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 3452, in completion
+    raise exception_type(
+          ~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        extra_kwargs=kwargs,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2301, in exception_type
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 465, in exception_type
+    raise NotFoundError(
+    ...<5 lines>...
+    )
+litellm.exceptions.NotFoundError: litellm.NotFoundError: NotFoundError: OpenAIException - The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 131, in propose
+    new_texts = self.propose_new_texts(curr_prog, reflective_dataset, predictor_names_to_update)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 82, in propose_new_texts
+    new_texts[name] = InstructionProposalSignature.run(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lm=self.reflection_lm,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        },
+        ^^
+    )["new_instruction"]
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/base.py", line 48, in run
+    lm_out = lm(full_prompt).strip()
+             ~~^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/teleprompt/gepa/gepa.py", line 563, in <lambda>
+    reflection_lm=(lambda x: self.reflection_lm(x)[0]) if self.reflection_lm is not None else None,
+                             ~~~~~~~~~~~~~~~~~~^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/utils/callback.py", line 326, in sync_wrapper
+    return fn(instance, *args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/base_lm.py", line 91, in __call__
+    response = self.forward(prompt=prompt, messages=messages, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/lm.py", line 158, in forward
+    results = completion(
+        request=dict(model=self.model, messages=messages, **kwargs),
+        num_retries=self.num_retries,
+        cache=litellm_cache_args,
+    )
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/cache.py", line 249, in sync_wrapper
+    result = fn(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/dspy-repo/dspy/clients/lm.py", line 359, in litellm_completion
+    return litellm.completion(
+           ~~~~~~~~~~~~~~~~~~^
+        cache=cache,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        **request,
+        ^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1312, in wrapper
+    return litellm.completion_with_retries(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 3490, in completion_with_retries
+    return retryer(original_function, *args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1332, in wrapper
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1207, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/main.py", line 3452, in completion
+    raise exception_type(
+          ~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        extra_kwargs=kwargs,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2301, in exception_type
+    raise e
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/hotpotqa/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 465, in exception_type
+    raise NotFoundError(
+    ...<5 lines>...
+    )
+litellm.exceptions.NotFoundError: litellm.NotFoundError: NotFoundError: OpenAIException - The model `openai/gpt-oss-20b/gpt-oss-20b` does not exist.
+
+2026/03/26 17:09:32 INFO dspy.teleprompt.gepa.gepa: Iteration 3: Reflective mutation did not propose a new candidate
+GEPA Optimization:   6%|▋         | 130/2000 [00:10<03:55,  7.93rollouts/s]2026/03/26 17:09:32 INFO dspy.teleprompt.gepa.gepa: Iteration 4: Selected program 0 score: 0.75
+
+  0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 1 (100.0%):   0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 2 (50.0%):  10%|█         | 1/10 [00:00<00:00, 9664.29it/s]Average Metric: 2.00 / 3 (66.7%):  20%|██        | 2/10 [00:00<00:00, 12520.31it/s]Average Metric: 2.00 / 4 (50.0%):  30%|███       | 3/10 [00:00<00:00, 14873.42it/s]Average Metric: 3.00 / 5 (60.0%):  40%|████      | 4/10 [00:00<00:00, 16660.59it/s]Average Metric: 3.00 / 6 (50.0%):  50%|█████     | 5/10 [00:00<00:00, 18047.78it/s]Average Metric: 3.00 / 7 (42.9%):  60%|██████    | 6/10 [00:00<00:00, 19021.79it/s]Average Metric: 4.00 / 8 (50.0%):  70%|███████   | 7/10 [00:00<00:00, 19837.92it/s]Average Metric: 5.00 / 9 (55.6%):  80%|████████  | 8/10 [00:00<00:00, 20547.72it/s]Average Metric: 6.00 / 10 (60.0%):  90%|█████████ | 9/10 [00:00<00:00, 21112.27it/s]Average Metric: 6.00 / 10 (60.0%): 100%|██████████| 10/10 [00:00<00:00, 20856.81it/s]2026/03/26 17:09:32 INFO dspy.evaluate.evaluate: Average Metric: 6.0 / 10 (60.0%)

@@ -1,0 +1,767 @@
+{
+  "iteration": 14,
+  "total_samples": 880,
+  "pareto_front_by_task": {
+    "0": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "1": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "2": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "3": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    "4": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "5": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "6": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "7": [
+      5
+    ],
+    "8": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "9": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "10": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "11": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "12": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "13": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "14": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "15": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "16": [
+      1
+    ],
+    "17": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "18": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "19": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "20": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "21": [
+      0,
+      1,
+      2,
+      4,
+      5
+    ],
+    "22": [
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "23": [
+      0,
+      1,
+      4
+    ],
+    "24": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "25": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "26": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "27": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "28": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "29": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "30": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "31": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "32": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "33": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "34": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "35": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "36": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "37": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "38": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "39": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "40": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "41": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "42": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "43": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "44": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "45": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "46": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "47": [
+      2,
+      3,
+      5
+    ],
+    "48": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "49": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "50": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "51": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "52": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "53": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "54": [
+      1,
+      2,
+      5
+    ],
+    "55": [
+      0,
+      2,
+      4
+    ],
+    "56": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "57": [
+      0,
+      4,
+      5
+    ],
+    "58": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "59": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "60": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "61": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "62": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "63": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "64": [
+      2
+    ],
+    "65": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "66": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "67": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "68": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "69": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "70": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "71": [
+      0,
+      2,
+      5
+    ],
+    "72": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "73": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "74": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "75": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "76": [
+      0,
+      4
+    ],
+    "77": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "78": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "79": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "80": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "81": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "82": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "83": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "84": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "85": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "86": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "87": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "88": [
+      0,
+      5
+    ],
+    "89": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "90": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "91": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "92": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "93": [
+      1,
+      3,
+      4
+    ],
+    "94": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "95": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "96": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "97": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "98": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "99": [
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  "program_library": {
+    "0": {
+      "predict": "Answer the question based on the context."
+    },
+    "1": {
+      "predict": "**Generalized Prompt Instructions for HotpotQA**\n\n1. **Read the entire context**  \n   \u2022 Treat all paragraphs as a single document.  \n   \u2022 Identify the pieces of information that answer the question, even if they are spread across multiple paragraphs (multi\u2011hop reasoning).\n\n2. **Answer concisely and accurately**  \n   \u2022 Return only the answer that the question seeks.  \n   \u2022 The answer should be a single phrase, with no additional words, explanations or commentary.  \n   \u2022 Do **not** add commas, periods, or articles unless the answer itself requires them (e.g., \u201cthe North Atlantic Conference\u201d).  \n   \u2022 Preserve the exact wording that appears in the context, including capitalization and punctuation.  \n   \u2022 If the answer is a direct quote from the text, quote only the quote, no surrounding explanation.\n\n3. **When the answer is not in the provided context**  \n   \u2022 Reply with a brief statement that the information is absent, e.g.  \n     **\u201cThe provided text does not contain information about \u2026.\u201d**  \n   \u2022 Do not supply external knowledge or fabricate an answer.\n\n4. **Yes/No and other short answers**  \n   \u2022 Respond with only \u201cyes\u201d or \u201cno\u201d (lower\u2011case) when the question is a simple affirmation or negation.  \n   \u2022 Do not add explanatory sentences to such questions.\n\n5. **Avoid extraneous punctuation or formatting**  \n   \u2022 Do not insert commas or periods unless they are part of the required answer.  \n   \u2022 Do not use quotation marks unless the answer is explicitly quoted in the context.\n\n6. **Multi\u2011hop reasoning**  \n   \u2022 If the answer requires linking several facts, synthesize them within your reasoning but still output only the final answer as a single phrase (steps 2\u20133 apply).\n\n7. **Formatting**  \n   \u2022 Output only the answer, no surrounding labels or commentary.  \n   \u2022 Example outputs:  \n     * `Yellowcraigs`  \n     * `2000`  \n     * `Bob Seger`  \n     * `No`  \n     * `the North Atlantic Conference`\n\nFollow these rules for every question to ensure the answer matches the expected response exactly."
+    },
+    "2": {
+      "predict": "**General Prompt\u2011Optimization Rules for HotpotQA (Multi\u2011Hop Reasoning)**  \n\n1. **Answer Only What Is Asked**  \n   * Do **not** add explanations, paraphrases, or extra sentences.  \n   * If the expected response is a single phrase, number, or a few words, output that **exactly** (e.g., \u201c1969 until 1974\u201d, \u201cmore than 70 countries\u201d, \u201cStirling\u201d etc.).  \n   * The answer must contain no leading/trailing punctuation beyond what is part of the phrase (e.g., no period at the end unless the expected answer includes one).\n\n2. **Match Exact Text or Numeric Format**  \n   * Pay attention to word choice. \u201c70\u201d is **incorrect** if the expected answer is \u201cmore than 70 countries\u201d.  \n   * Preserve hyphenation, capitalization, and punctuation that appear in the source text (e.g., \u201cSeptember 25, 1934\u201d).  \n   * If the answer is a date range, use the same phrasing as the source (\u201c1969 until 1974\u201d), not a shorter \u201c1969\u20131974\u201d or \u201c1969\u20131974\u201d.\n\n3. **Multi\u2011Hop Reasoning**  \n   * When the answer requires combining multiple context paragraphs, trace the logical chain explicitly *within your internal reasoning* but **do not** echo that chain in the final answer.  \n   * The final answer should be a single, self\u2011contained response that a human would consider correct on its own.\n\n4. **No Introductory or Closing Statements**  \n   * Examples: \u201cThe answer is \u2026\u201d, \u201cI think the answer is \u2026\u201d, \u201cHere it is \u2026\u201d, \u201cThe correct answer is \u2026\u201d are all disallowed.  \n   * Return just the factual answer.\n\n5. **Avoid Redundancy or Paraphrasing**  \n   * Do not repeat information verbatim from the context unless it is the exact expected answer.  \n   * If the context contains a statement that exactly matches the expected answer, copy it; otherwise, synthesize the required extraction without extra commentary.\n\n6. **Handle Ambiguity Judiciously**  \n   * If the question can be answered with multiple possible correct phrases (e.g., a name may appear in several paragraphs), choose the one that appears as a *direct answer* to the question in the context.  \n   * Do not guess or surface an alternate but equally plausible answer.\n\n7. **Apply \u201cAnswer the Question Based on the Context\u201d**  \n   * The final response must be based solely on information present in the given paragraphs.  \n   * Do **not** use outside knowledge or assumptions.\n\n---\n\n### Quick Reference Checklist\n| Step | What to Do | What to Avoid |\n|------|------------|---------------|\n| 1 | Identify the exact answer string that the question demands. | Long explanations. |\n| 2 | Verify that the string matches exactly the wording/numbers in the context or the expected answer. | Altering wording (e.g., \u201c70\u201d \u2192 \u201c70 countries\u201d). |\n| 3 | Output that string alone, no preamble or postfix. | \u201cThe answer is \u2026\u201d, \u201cI think \u2026\u201d. |\n| 4 | If multiple hops needed, use them internally but keep the output concise. | Showing your reasoning in the answer. |\n\nUse these rules for every HotpotQA question, regardless of difficulty or number of hops."
+    },
+    "3": {
+      "predict": "**Generalized Prompt Instructions for HotpotQA**\n\n*Answer the question using only the information that is explicitly provided in the context. Do not add explanations, the question itself, or any extra text.*\n\n1. **Conciseness & Exactness**  \n   * Return the answer as a single factual string that matches the expected answer exactly (case\u2011insensitive, but preserve punctuation as shown in the context).  \n   * Do not prepend, append, or embed other text.  \n   * Do not add a trailing period unless the expected answer contains one.\n\n2. **Formatting Rules**  \n   * **List answers** \u2013 separate items with commas, insert \u201cand\u201d before the last item, no Oxford comma unless present in the source.  \n   * **Dates / Years** \u2013 give only the number or full date exactly as it appears.  \n   * **Names** \u2013 return the full name exactly as written in the context.  \n   * **Yes/No** \u2013 respond with \u201cyes\u201d or \u201cno\u201d (lowercase).  \n   * **Single\u2011word or numeric answers** \u2013 provide only that word or number.\n\n3. **Prohibition of Extra Content**  \n   * No explanatory sentences, just the answer.  \n   * No quotation marks, no \u201cAnswer:\u201d prefixes, no additional punctuation other than what is required.\n\n4. **Use of Context**  \n   * Only cite facts that can be directly verified in the context.  \n   * If the context contains multiples relevant facts, synthesize them without creating new information.\n\n5. **Example of Correct Output**  \n   *Question:* \u201cWhat was the name of the 1996 loose adaptation of William Shakespeare\u2019s \u201cRomeo & Juliet\u201d written by James\u00a0Gunn?\u201d  \n   *Answer:* `Tromeo and Juliet`\n\nThese rules apply to all HotpotQA multi\u2011hop reasoning tasks."
+    },
+    "4": {
+      "predict": "**General Prompt\u2011Optimization Rules for HotpotQA (Multi\u2011Hop Reasoning)**  \n\n1. **Answer only what is explicitly asked**  \n   * Output a single, self\u2011contained answer \u2013 no questions, no comments, no other sentences.  \n   * For yes/no, \u201cwho/what/where/when\u201d etc. questions, the output must be the minimal phrase or word that satisfies the question (e.g. \u201cyes\u201d, \u201cno\u201d, \u201c2014\u201d, \u201cStirling\u201d).  \n   * If the context contains a sentence that is an exact answer, copy that sentence exactly; otherwise synthesize the required extraction from the paragraphs.\n\n2. **Exact text / numeric format**  \n   * Preserve hyphenation, capitalization, punctuation, and spelling exactly as it appears in the context or as the expected answer says.  \n   * Do not abbreviate or modify numbers (\u201c70\u201d vs. \u201cmore than 70 countries\u201d).  \n   * For date ranges and dates use the same wording as the source (\u201c1969 until 1974\u201d).\n\n3. **Multi\u2011hop reasoning**  \n   * Trace all logical links internally; do not repeat the chain in the output.  \n   * If the answer requires combining information from two or more paragraphs, the final output is still just the answer phrase.\n\n4. **No introductions or closing remarks**  \n   * Disallowed: \u201cThe answer is \u2026\u201d, \u201cI think the answer is \u2026\u201d, \u201cHere it is \u2026\u201d.  \n   * The output must start immediately with the answer.\n\n5. **Avoid redundancy, paraphrasing and guessing**  \n   * Only repeat information that is the literal answer.  \n   * If several possible phrases match, pick the one that appears as the **direct answer** in the context.  \n   * Do not invent or assume facts that are not in the supplied text.\n\n6. **Yes/No & Comparative Questions**  \n   * When the question asks for a comparison (e.g., \u201cWhich has a higher\u2026?\u201d) compute the comparison from the data in the paragraphs; output the correct choice.  \n   * For pure yes/no questions, output exactly \u201cyes\u201d or \u201cno\u201d \u2013 no additional explanation.\n\n7. **Answer\u2011the\u2011Question\u2011Based\u2011on\u2011the\u2011Context**  \n   * Do not use outside knowledge; rely solely on what is present in the given paragraphs.\n\n8. **Shortness and Clarity**  \n   * Keep the answer as short as possible while satisfying the question (ideally one phrase, number, or word).  \n   * Avoid unnecessary punctuation at the beginning or end unless it belongs to the answer itself.\n\n9. **Edge\u2011case handling**  \n   * If the context gives multiple dates, use the first one mentioned if the question asks for \u201cwhen\u201d.  \n   * If the context mentions a person\u2019s birth year and the question asks \u201cborn in \u2026\u201d, answer with the year.  \n   * For questions that ask for a *particular* entity among many, choose the one that is the first instance of the answer given in the context.\n\n10. **Answer format for combined answer / explanation**  \n   * All examples have shown a correct answer that is just the answer phrase; if a longer sentence is returned, it is considered incorrect.  \n   * Therefore, never combine explanation with answer \u2013 only the pure answer.\n\n---\n\n### Quick\u2011Reference Checklist\n\n| Step | What to Do | What to Avoid |\n|------|------------|---------------|\n| 1 | Identify the minimal string that satisfies the question | Adding comments or explanations |\n| 2 | Match wording, hyphenation, capitalization, punctuation exactly | Altering wording (e.g., \u201c70\u201d \u2192 \u201c70 countries\u201d) |\n| 3 | Output only the answer; no surrounding text | \u201cThe answer is \u2026\u201d or \u201cI think \u2026\u201d |\n| 4 | For multi\u2011hop, internal chain never appears in output | Re\u2011echoing the chain in the answer |\n| 5 | When multiple candidates exist, pick the one that is the *direct* answer in the context | Guessing or giving an alternate answer |\n| 6 | For yes/no, output \u201cyes\u201d or \u201cno\u201d only | \u201cIt is yes\u201d or paraphrases |\n| 7 | Rely only on the provided paragraphs | External knowledge or assumptions |\n\n---\n\n#### Example Application\n\n- **Question:** *Which performance act has a higher instrument to person ratio, Badly\u202fDrawn\u202fBoy or Wolf\u202fAlice?*  \n  **Analysis:** Paragraph\u202f7 says \u201cBadly\u202fDrawn\u202fBoy\u201d is a solo act (1 person). Paragraph\u202f3 says \u201cWolf\u202fAlice\u201d is a four\u2011person band. Therefore \u201cBadly\u202fDrawn\u202fBoy\u201d has a higher instrument\u2011to\u2011person ratio.  \n  **Answer:** `Badly\u202fDrawn\u202fBoy`\n\n- **Question:** *Are Freakonomics and In the Realm of the Hackers both American documentaries?*  \n  **Analysis:** Paragraph\u202f9 labels *Freakonomics* as an American documentary; paragraph\u202f8 says *In the Realm of the Hackers* is an Australian documentary.  \n  **Answer:** `no`\n\n- **Question:** *What science fantasy young adult series, told in first\u2011person, has a set of companion books narrating the stories of enslaved worlds and alien species?*  \n  **Analysis:** Paragraph\u202f9 identifies **Animorphs**.  \n  **Answer:** `Animorphs`\n\nFollow the rules above for every HotpotQA query to ensure a correct, concise, and context\u2011based answer."
+    },
+    "5": {
+      "predict": "**Generalized Instruction for HotpotQA Multi\u2011Hop Answers**\n\n1. **Locate the required information**  \n   Scan all paragraphs for the facts that answer the question.  \n   If the answer needs to be derived, make sure the reasoning is correct, but do **not** expose the intermediate reasoning in your final answer.\n\n2. **Give only the fact that answers the question**  \n   - If the expected answer is a name, number, phrase, or short fact, output that exact text only.  \n   - Do **not** prepend or append explanatory words such as \u201cThe answer is,\u201d \u201cHere\u2019s,\u201d or \u201cIn the context.\u201d  \n   - Do **not** add any sentences that are not the answer itself.\n\n3. **Match punctuation and spacing exactly**  \n   Return the answer exactly as it appears in the context (or as the correct factual answer).  \n   If the expected answer is \u201cmore than 70 countries,\u201d output **exactly** that phrase, not \u201c70\u201d or \u201c70 countries.\u201d  \n   If the answer is \u201c3,677 seated,\u201d output exactly that wording.\n\n4. **Avoid extra context or commentary**  \n   Do not provide additional details, opinions, or rationales.  \n   The response should consist of a single line containing only the answer.\n\n5. **Maintain correct formatting**  \n   Preserve capitalization, numbers, commas, and other formatting from the source when they form part of the correct answer.\n\n**Example**  \n_Question:_ \u201cThe arena \u2026 can seat how many people?\u201d  \n_Answer:_ **3,677 seated**  \n\nBy following these guidelines, the produced answer will be concise, accurate, and match the expected output exactly."
+    }
+  }
+}

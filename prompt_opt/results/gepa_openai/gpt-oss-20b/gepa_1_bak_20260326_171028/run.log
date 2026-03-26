@@ -1,0 +1,135 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026/03/26 17:10:29 INFO dspy.teleprompt.gepa.gepa: Running GEPA for approx 2000 metric calls of the program. This amounts to 10.00 full evals on the train+val set.
+2026/03/26 17:10:29 INFO dspy.teleprompt.gepa.gepa: Using 100 examples for tracking Pareto scores. You can consider using a smaller sample of the valset to allow GEPA to explore more diverse solutions within the same budget. GEPA requires you to provide the smallest valset that is just large enough to match your downstream task distribution, while providing as large trainset as possible.
+Backing up existing output directory to: prompt_opt/results/gepa_openai/gpt-oss-20b/gepa_1_bak_20260326_171028
+Configuring DSPy with model: gemini-2.5-flash-lite
+Configuring reflection LM: openai/gpt-oss-20b @ http://127.0.0.1:8000/v1
+Loading 100 HotpotQA tasks...
+Loaded 100 tasks.
+Training set: 100 examples
+Validation set: 100 examples
+
+Original instruction:
+Answer the question based on the context.
+
+Starting GEPA optimization...
+[92mRunning customized GEPA...[0m
+GEPA Optimization:   0%|          | 0/2000 [00:00<?, ?rollouts/s]2026/03/26 17:10:29 INFO dspy.evaluate.evaluate: Average Metric: 75.0 / 100 (75.0%)
+2026/03/26 17:10:29 INFO dspy.teleprompt.gepa.gepa: Iteration 0: Base program full valset score: 0.75 over 100 / 100 examples
+GEPA Optimization:   5%|▌         | 100/2000 [00:00<00:03, 475.09rollouts/s]2026/03/26 17:10:29 INFO dspy.teleprompt.gepa.gepa: Iteration 1: Selected program 0 score: 0.75
+  0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 1 (100.0%):   0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 2.00 / 2 (100.0%):  10%|█         | 1/10 [00:00<00:00, 9776.93it/s]Average Metric: 3.00 / 3 (100.0%):  20%|██        | 2/10 [00:00<00:00, 12336.19it/s]Average Metric: 4.00 / 4 (100.0%):  30%|███       | 3/10 [00:00<00:00, 14282.53it/s]Average Metric: 5.00 / 5 (100.0%):  40%|████      | 4/10 [00:00<00:00, 15753.25it/s]Average Metric: 6.00 / 6 (100.0%):  50%|█████     | 5/10 [00:00<00:00, 16804.10it/s]Average Metric: 7.00 / 7 (100.0%):  60%|██████    | 6/10 [00:00<00:00, 1596.51it/s] Average Metric: 8.00 / 8 (100.0%):  70%|███████   | 7/10 [00:00<00:00, 1837.07it/s]Average Metric: 9.00 / 9 (100.0%):  80%|████████  | 8/10 [00:00<00:00, 1513.23it/s]Average Metric: 9.00 / 10 (90.0%):  90%|█████████ | 9/10 [00:00<00:00, 1686.27it/s]Average Metric: 9.00 / 10 (90.0%): 100%|██████████| 10/10 [00:00<00:00, 1854.49it/s]2026/03/26 17:10:29 INFO dspy.evaluate.evaluate: Average Metric: 9.0 / 10 (90.0%)
+2026/03/26 17:10:35 INFO dspy.teleprompt.gepa.gepa: Iteration 1: Exception during reflection/proposal: 'dict' object has no attribute 'strip'
+2026/03/26 17:10:35 INFO dspy.teleprompt.gepa.gepa: Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 131, in propose
+    new_texts = self.propose_new_texts(curr_prog, reflective_dataset, predictor_names_to_update)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 82, in propose_new_texts
+    new_texts[name] = InstructionProposalSignature.run(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lm=self.reflection_lm,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        },
+        ^^
+    )["new_instruction"]
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/base.py", line 48, in run
+    lm_out = lm(full_prompt).strip()
+             ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'strip'
+
+2026/03/26 17:10:35 INFO dspy.teleprompt.gepa.gepa: Iteration 1: Reflective mutation did not propose a new candidate
+2026/03/26 17:10:35 INFO dspy.teleprompt.gepa.gepa: Iteration 2: Selected program 0 score: 0.75
+
+  0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 1 (100.0%):   0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 2 (50.0%):  10%|█         | 1/10 [00:00<00:00, 9446.63it/s]Average Metric: 1.00 / 3 (33.3%):  20%|██        | 2/10 [00:00<00:00, 12052.60it/s]Average Metric: 2.00 / 4 (50.0%):  30%|███       | 3/10 [00:00<00:00, 14217.98it/s]Average Metric: 3.00 / 5 (60.0%):  40%|████      | 4/10 [00:00<00:00, 15827.56it/s]Average Metric: 4.00 / 6 (66.7%):  50%|█████     | 5/10 [00:00<00:00, 17050.02it/s]Average Metric: 4.00 / 7 (57.1%):  60%|██████    | 6/10 [00:00<00:00, 17975.59it/s]Average Metric: 5.00 / 8 (62.5%):  70%|███████   | 7/10 [00:00<00:00, 18676.93it/s]Average Metric: 6.00 / 9 (66.7%):  80%|████████  | 8/10 [00:00<00:00, 11534.70it/s]Average Metric: 7.00 / 10 (70.0%):  90%|█████████ | 9/10 [00:00<00:00, 4997.19it/s]Average Metric: 7.00 / 10 (70.0%): 100%|██████████| 10/10 [00:00<00:00, 5362.87it/s]2026/03/26 17:10:35 INFO dspy.evaluate.evaluate: Average Metric: 7.0 / 10 (70.0%)
+2026/03/26 17:10:41 INFO dspy.teleprompt.gepa.gepa: Iteration 2: Exception during reflection/proposal: 'dict' object has no attribute 'strip'
+2026/03/26 17:10:41 INFO dspy.teleprompt.gepa.gepa: Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 131, in propose
+    new_texts = self.propose_new_texts(curr_prog, reflective_dataset, predictor_names_to_update)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 82, in propose_new_texts
+    new_texts[name] = InstructionProposalSignature.run(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lm=self.reflection_lm,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        },
+        ^^
+    )["new_instruction"]
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/base.py", line 48, in run
+    lm_out = lm(full_prompt).strip()
+             ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'strip'
+
+2026/03/26 17:10:41 INFO dspy.teleprompt.gepa.gepa: Iteration 2: Reflective mutation did not propose a new candidate
+2026/03/26 17:10:41 INFO dspy.teleprompt.gepa.gepa: Iteration 3: Selected program 0 score: 0.75
+
+  0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 1 (100.0%):   0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 2.00 / 2 (100.0%):  10%|█         | 1/10 [00:00<00:00, 9467.95it/s]Average Metric: 2.00 / 3 (66.7%):  20%|██        | 2/10 [00:00<00:00, 11229.73it/s]Average Metric: 3.00 / 4 (75.0%):  30%|███       | 3/10 [00:00<00:00, 13175.82it/s]Average Metric: 4.00 / 5 (80.0%):  40%|████      | 4/10 [00:00<00:00, 14755.69it/s]Average Metric: 5.00 / 6 (83.3%):  50%|█████     | 5/10 [00:00<00:00, 15899.56it/s]Average Metric: 6.00 / 7 (85.7%):  60%|██████    | 6/10 [00:00<00:00, 16923.89it/s]Average Metric: 7.00 / 8 (87.5%):  70%|███████   | 7/10 [00:00<00:00, 17612.55it/s]Average Metric: 8.00 / 9 (88.9%):  80%|████████  | 8/10 [00:00<00:00, 5054.14it/s] Average Metric: 9.00 / 10 (90.0%):  90%|█████████ | 9/10 [00:00<00:00, 3257.29it/s]Average Metric: 9.00 / 10 (90.0%): 100%|██████████| 10/10 [00:00<00:00, 3529.07it/s]2026/03/26 17:10:41 INFO dspy.evaluate.evaluate: Average Metric: 9.0 / 10 (90.0%)
+2026/03/26 17:10:44 INFO dspy.teleprompt.gepa.gepa: Iteration 3: Exception during reflection/proposal: 'dict' object has no attribute 'strip'
+2026/03/26 17:10:44 INFO dspy.teleprompt.gepa.gepa: Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 131, in propose
+    new_texts = self.propose_new_texts(curr_prog, reflective_dataset, predictor_names_to_update)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 82, in propose_new_texts
+    new_texts[name] = InstructionProposalSignature.run(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lm=self.reflection_lm,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        },
+        ^^
+    )["new_instruction"]
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/base.py", line 48, in run
+    lm_out = lm(full_prompt).strip()
+             ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'strip'
+
+2026/03/26 17:10:44 INFO dspy.teleprompt.gepa.gepa: Iteration 3: Reflective mutation did not propose a new candidate
+2026/03/26 17:10:44 INFO dspy.teleprompt.gepa.gepa: Iteration 4: Selected program 0 score: 0.75
+
+  0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 1 (100.0%):   0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 2.00 / 2 (100.0%):  10%|█         | 1/10 [00:00<00:00, 9619.96it/s]Average Metric: 3.00 / 3 (100.0%):  20%|██        | 2/10 [00:00<00:00, 12175.05it/s]Average Metric: 3.00 / 4 (75.0%):  30%|███       | 3/10 [00:00<00:00, 14090.61it/s] Average Metric: 4.00 / 5 (80.0%):  40%|████      | 4/10 [00:00<00:00, 15563.28it/s]Average Metric: 4.00 / 6 (66.7%):  50%|█████     | 5/10 [00:00<00:00, 16630.86it/s]Average Metric: 5.00 / 7 (71.4%):  60%|██████    | 6/10 [00:00<00:00, 17635.48it/s]Average Metric: 6.00 / 8 (75.0%):  70%|███████   | 7/10 [00:00<00:00, 18477.11it/s]Average Metric: 6.00 / 9 (66.7%):  80%|████████  | 8/10 [00:00<00:00, 19206.89it/s]Average Metric: 6.00 / 10 (60.0%):  90%|█████████ | 9/10 [00:00<00:00, 19743.06it/s]Average Metric: 6.00 / 10 (60.0%): 100%|██████████| 10/10 [00:00<00:00, 19747.19it/s]2026/03/26 17:10:44 INFO dspy.evaluate.evaluate: Average Metric: 6.0 / 10 (60.0%)
+2026/03/26 17:10:47 INFO dspy.teleprompt.gepa.gepa: Iteration 4: Exception during reflection/proposal: 'dict' object has no attribute 'strip'
+2026/03/26 17:10:47 INFO dspy.teleprompt.gepa.gepa: Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 131, in propose
+    new_texts = self.propose_new_texts(curr_prog, reflective_dataset, predictor_names_to_update)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 82, in propose_new_texts
+    new_texts[name] = InstructionProposalSignature.run(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lm=self.reflection_lm,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        },
+        ^^
+    )["new_instruction"]
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/base.py", line 48, in run
+    lm_out = lm(full_prompt).strip()
+             ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'strip'
+
+2026/03/26 17:10:47 INFO dspy.teleprompt.gepa.gepa: Iteration 4: Reflective mutation did not propose a new candidate
+2026/03/26 17:10:47 INFO dspy.teleprompt.gepa.gepa: Iteration 5: Selected program 0 score: 0.75
+
+  0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 0.00 / 1 (0.0%):   0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 2 (50.0%):  10%|█         | 1/10 [00:00<00:00, 9341.43it/s]Average Metric: 1.00 / 3 (33.3%):  20%|██        | 2/10 [00:00<00:00, 11831.61it/s]Average Metric: 2.00 / 4 (50.0%):  30%|███       | 3/10 [00:00<00:00, 13632.62it/s]Average Metric: 3.00 / 5 (60.0%):  40%|████      | 4/10 [00:00<00:00, 14820.86it/s]Average Metric: 4.00 / 6 (66.7%):  50%|█████     | 5/10 [00:00<00:00, 15887.52it/s]Average Metric: 5.00 / 7 (71.4%):  60%|██████    | 6/10 [00:00<00:00, 16777.22it/s]Average Metric: 6.00 / 8 (75.0%):  70%|███████   | 7/10 [00:00<00:00, 17342.07it/s]Average Metric: 7.00 / 9 (77.8%):  80%|████████  | 8/10 [00:00<00:00, 5018.61it/s] Average Metric: 8.00 / 10 (80.0%):  90%|█████████ | 9/10 [00:00<00:00, 3271.40it/s]Average Metric: 8.00 / 10 (80.0%): 100%|██████████| 10/10 [00:00<00:00, 3553.89it/s]2026/03/26 17:10:47 INFO dspy.evaluate.evaluate: Average Metric: 8.0 / 10 (80.0%)
+2026/03/26 17:10:51 INFO dspy.teleprompt.gepa.gepa: Iteration 5: Exception during reflection/proposal: 'dict' object has no attribute 'strip'
+2026/03/26 17:10:51 INFO dspy.teleprompt.gepa.gepa: Traceback (most recent call last):
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 131, in propose
+    new_texts = self.propose_new_texts(curr_prog, reflective_dataset, predictor_names_to_update)
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/reflective_mutation.py", line 82, in propose_new_texts
+    new_texts[name] = InstructionProposalSignature.run(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lm=self.reflection_lm,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        },
+        ^^
+    )["new_instruction"]
+    ^
+  File "/var/lib/condor/execute/slot3/dir_2923521/scratch/POLCA/gepa-repo/src/gepa/proposer/reflective_mutation/base.py", line 48, in run
+    lm_out = lm(full_prompt).strip()
+             ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'strip'
+
+2026/03/26 17:10:51 INFO dspy.teleprompt.gepa.gepa: Iteration 5: Reflective mutation did not propose a new candidate
+GEPA Optimization:   8%|▊         | 150/2000 [00:22<05:40,  5.43rollouts/s] 2026/03/26 17:10:51 INFO dspy.teleprompt.gepa.gepa: Iteration 6: Selected program 0 score: 0.75
+
+  0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 0.00 / 1 (0.0%):   0%|          | 0/10 [00:00<?, ?it/s]Average Metric: 1.00 / 2 (50.0%):  10%|█         | 1/10 [00:00<00:00, 9446.63it/s]Average Metric: 2.00 / 3 (66.7%):  20%|██        | 2/10 [00:00<00:00, 12052.60it/s]Average Metric: 3.00 / 4 (75.0%):  30%|███       | 3/10 [00:00<00:00, 13950.01it/s]Average Metric: 4.00 / 5 (80.0%):  40%|████      | 4/10 [00:00<00:00, 15420.24it/s]Average Metric: 5.00 / 6 (83.3%):  50%|█████     | 5/10 [00:00<00:00, 16500.02it/s]Average Metric: 5.00 / 7 (71.4%):  60%|██████    | 6/10 [00:00<00:00, 17500.57it/s]Average Metric: 6.00 / 8 (75.0%):  70%|███████   | 7/10 [00:00<00:00, 18112.36it/s]Average Metric: 6.00 / 9 (66.7%):  80%|████████  | 8/10 [00:00<00:00, 18662.09it/s]Average Metric: 6.00 / 10 (60.0%):  90%|█████████ | 9/10 [00:00<00:00, 5907.47it/s]Average Metric: 6.00 / 10 (60.0%): 100%|██████████| 10/10 [00:00<00:00, 6316.72it/s]2026/03/26 17:10:51 INFO dspy.evaluate.evaluate: Average Metric: 6.0 / 10 (60.0%)

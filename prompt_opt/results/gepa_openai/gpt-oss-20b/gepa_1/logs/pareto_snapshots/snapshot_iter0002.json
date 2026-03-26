@@ -1,0 +1,400 @@
+{
+  "iteration": 2,
+  "total_samples": 240,
+  "pareto_front_by_task": {
+    "0": [
+      0,
+      1
+    ],
+    "1": [
+      0,
+      1
+    ],
+    "2": [
+      0,
+      1
+    ],
+    "3": [
+      0,
+      1
+    ],
+    "4": [
+      0,
+      1
+    ],
+    "5": [
+      0,
+      1
+    ],
+    "6": [
+      0,
+      1
+    ],
+    "7": [
+      0,
+      1
+    ],
+    "8": [
+      0,
+      1
+    ],
+    "9": [
+      0,
+      1
+    ],
+    "10": [
+      0,
+      1
+    ],
+    "11": [
+      0,
+      1
+    ],
+    "12": [
+      0,
+      1
+    ],
+    "13": [
+      0,
+      1
+    ],
+    "14": [
+      0,
+      1
+    ],
+    "15": [
+      0,
+      1
+    ],
+    "16": [
+      1
+    ],
+    "17": [
+      0,
+      1
+    ],
+    "18": [
+      1
+    ],
+    "19": [
+      0,
+      1
+    ],
+    "20": [
+      0,
+      1
+    ],
+    "21": [
+      0,
+      1
+    ],
+    "22": [
+      0,
+      1
+    ],
+    "23": [
+      0,
+      1
+    ],
+    "24": [
+      0,
+      1
+    ],
+    "25": [
+      0,
+      1
+    ],
+    "26": [
+      0,
+      1
+    ],
+    "27": [
+      0,
+      1
+    ],
+    "28": [
+      1
+    ],
+    "29": [
+      0,
+      1
+    ],
+    "30": [
+      0,
+      1
+    ],
+    "31": [
+      0,
+      1
+    ],
+    "32": [
+      0,
+      1
+    ],
+    "33": [
+      0,
+      1
+    ],
+    "34": [
+      0
+    ],
+    "35": [
+      0,
+      1
+    ],
+    "36": [
+      0,
+      1
+    ],
+    "37": [
+      0,
+      1
+    ],
+    "38": [
+      0,
+      1
+    ],
+    "39": [
+      0,
+      1
+    ],
+    "40": [
+      0,
+      1
+    ],
+    "41": [
+      0,
+      1
+    ],
+    "42": [
+      0,
+      1
+    ],
+    "43": [
+      0,
+      1
+    ],
+    "44": [
+      0,
+      1
+    ],
+    "45": [
+      0,
+      1
+    ],
+    "46": [
+      0,
+      1
+    ],
+    "47": [
+      0,
+      1
+    ],
+    "48": [
+      0,
+      1
+    ],
+    "49": [
+      0
+    ],
+    "50": [
+      1
+    ],
+    "51": [
+      0,
+      1
+    ],
+    "52": [
+      0,
+      1
+    ],
+    "53": [
+      0,
+      1
+    ],
+    "54": [
+      1
+    ],
+    "55": [
+      0
+    ],
+    "56": [
+      0,
+      1
+    ],
+    "57": [
+      0
+    ],
+    "58": [
+      0,
+      1
+    ],
+    "59": [
+      0,
+      1
+    ],
+    "60": [
+      0,
+      1
+    ],
+    "61": [
+      0,
+      1
+    ],
+    "62": [
+      0,
+      1
+    ],
+    "63": [
+      0,
+      1
+    ],
+    "64": [
+      0,
+      1
+    ],
+    "65": [
+      0,
+      1
+    ],
+    "66": [
+      0,
+      1
+    ],
+    "67": [
+      0,
+      1
+    ],
+    "68": [
+      0,
+      1
+    ],
+    "69": [
+      0,
+      1
+    ],
+    "70": [
+      0
+    ],
+    "71": [
+      0
+    ],
+    "72": [
+      0,
+      1
+    ],
+    "73": [
+      0,
+      1
+    ],
+    "74": [
+      0,
+      1
+    ],
+    "75": [
+      0,
+      1
+    ],
+    "76": [
+      0
+    ],
+    "77": [
+      0,
+      1
+    ],
+    "78": [
+      0,
+      1
+    ],
+    "79": [
+      0,
+      1
+    ],
+    "80": [
+      0,
+      1
+    ],
+    "81": [
+      0,
+      1
+    ],
+    "82": [
+      0,
+      1
+    ],
+    "83": [
+      0,
+      1
+    ],
+    "84": [
+      0,
+      1
+    ],
+    "85": [
+      0,
+      1
+    ],
+    "86": [
+      0,
+      1
+    ],
+    "87": [
+      0,
+      1
+    ],
+    "88": [
+      0
+    ],
+    "89": [
+      0,
+      1
+    ],
+    "90": [
+      0,
+      1
+    ],
+    "91": [
+      0,
+      1
+    ],
+    "92": [
+      0,
+      1
+    ],
+    "93": [
+      1
+    ],
+    "94": [
+      0,
+      1
+    ],
+    "95": [
+      0,
+      1
+    ],
+    "96": [
+      0,
+      1
+    ],
+    "97": [
+      0,
+      1
+    ],
+    "98": [
+      0,
+      1
+    ],
+    "99": [
+      0,
+      1
+    ]
+  },
+  "program_library": {
+    "0": {
+      "predict": "Answer the question based on the context."
+    },
+    "1": {
+      "predict": "**Generalized Prompt Instructions for HotpotQA**\n\n1. **Read the entire context**  \n   \u2022 Treat all paragraphs as a single document.  \n   \u2022 Identify the pieces of information that answer the question, even if they are spread across multiple paragraphs (multi\u2011hop reasoning).\n\n2. **Answer concisely and accurately**  \n   \u2022 Return only the answer that the question seeks.  \n   \u2022 The answer should be a single phrase, with no additional words, explanations or commentary.  \n   \u2022 Do **not** add commas, periods, or articles unless the answer itself requires them (e.g., \u201cthe North Atlantic Conference\u201d).  \n   \u2022 Preserve the exact wording that appears in the context, including capitalization and punctuation.  \n   \u2022 If the answer is a direct quote from the text, quote only the quote, no surrounding explanation.\n\n3. **When the answer is not in the provided context**  \n   \u2022 Reply with a brief statement that the information is absent, e.g.  \n     **\u201cThe provided text does not contain information about \u2026.\u201d**  \n   \u2022 Do not supply external knowledge or fabricate an answer.\n\n4. **Yes/No and other short answers**  \n   \u2022 Respond with only \u201cyes\u201d or \u201cno\u201d (lower\u2011case) when the question is a simple affirmation or negation.  \n   \u2022 Do not add explanatory sentences to such questions.\n\n5. **Avoid extraneous punctuation or formatting**  \n   \u2022 Do not insert commas or periods unless they are part of the required answer.  \n   \u2022 Do not use quotation marks unless the answer is explicitly quoted in the context.\n\n6. **Multi\u2011hop reasoning**  \n   \u2022 If the answer requires linking several facts, synthesize them within your reasoning but still output only the final answer as a single phrase (steps 2\u20133 apply).\n\n7. **Formatting**  \n   \u2022 Output only the answer, no surrounding labels or commentary.  \n   \u2022 Example outputs:  \n     * `Yellowcraigs`  \n     * `2000`  \n     * `Bob Seger`  \n     * `No`  \n     * `the North Atlantic Conference`\n\nFollow these rules for every question to ensure the answer matches the expected response exactly."
+    }
+  }
+}
