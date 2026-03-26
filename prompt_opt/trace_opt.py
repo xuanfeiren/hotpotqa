@@ -34,7 +34,11 @@ torch.manual_seed(10)
 
 API_BASE = "https://generativelanguage.googleapis.com/v1beta/openai/"
 MODEL_NAME = "gemini-2.5-flash-lite"
-os.environ["TRACE_LITELLM_MODEL"] = "gemini/gemini-2.5-flash-lite"
+# os.environ["TRACE_LITELLM_MODEL"] = "gemini/gemini-2.5-flash-lite"
+os.environ["TRACE_CUSTOMLLM_URL"] = "http://127.0.0.1:8000"
+os.environ["TRACE_DEFAULT_LLM_BACKEND"] = "CustomLLM"
+os.environ["TRACE_CUSTOMLLM_MODEL"] = "openai/gpt-oss-20b"
+
 
 OBJECTIVE = """You are an expert in agent prompt optimization for HotpotQA (multi-hop reasoning). Questions require reasoning over information spread across multiple context paragraphs. Your goal is to optimize meta_instructions described in #Variables for an agent.
 
