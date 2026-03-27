@@ -11,17 +11,30 @@ max_code_length: 10000
 language: "text"              # Prompt evolution, not code
 
 # LLM Configuration
+# llm:
+#   api_base: "https://generativelanguage.googleapis.com/v1beta/openai/"
+#   api_key: "${GEMINI_API_KEY}"
+#   models:
+#     - name: "gemini-2.5-flash-lite"
+#       weight: 1.0
+#
+#   temperature: 0.4
+#   max_tokens: 16000
+#   timeout: 150
+#   retries: 3
+
 llm:
-  api_base: "https://generativelanguage.googleapis.com/v1beta/openai/"
-  api_key: "${GEMINI_API_KEY}"
+  api_base: "http://127.0.0.1:8000/v1"
+  api_key: "EMPTY"
   models:
-    - name: "gemini-2.5-flash-lite"
+    - name: "openai/gpt-oss-20b"
       weight: 1.0
 
   temperature: 0.4
   max_tokens: 16000
   timeout: 150
   retries: 3
+
 
 # Prompt Configuration
 prompt:
