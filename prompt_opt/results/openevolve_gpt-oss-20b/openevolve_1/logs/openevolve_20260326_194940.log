@@ -1,0 +1,302 @@
+2026-03-26 19:49:40,991 - openevolve.controller - INFO - Logging to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/logs/openevolve_20260326_194940.log
+2026-03-26 19:49:40,995 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-03-26 19:49:41,014 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: openai/gpt-oss-20b
+2026-03-26 19:49:41,015 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: openai/gpt-oss-20b (weight: 1.00)
+2026-03-26 19:49:41,021 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-03-26 19:49:41,021 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-03-26 19:49:41,021 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-03-26 19:49:42,480 - openevolve.evaluator - INFO - Successfully loaded evaluation function from prompt_opt/openevolve_opt.py
+2026-03-26 19:49:42,480 - openevolve.evaluator - INFO - Initialized evaluator with prompt_opt/openevolve_opt.py
+2026-03-26 19:49:42,480 - openevolve.controller - INFO - Initialized OpenEvolve with prompt_opt/openevolve_initial_prompt.txt
+2026-03-26 19:49:42,480 - openevolve.controller - INFO - Adding initial program to database
+2026-03-26 19:49:53,058 - openevolve.evaluator - INFO - Evaluated program ae0cb634-04c2-4278-8b3a-c7f6619763b6 in 10.58s: combined_score=0.7400, length=41.0000
+2026-03-26 19:49:53,059 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'length': 25}
+2026-03-26 19:49:53,059 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-03-26 19:49:53,059 - openevolve.process_parallel - INFO - Set max None tasks per child
+2026-03-26 19:49:53,060 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-03-26 19:49:53,060 - openevolve.controller - INFO - Using island-based evolution with 3 islands
+2026-03-26 19:49:53,060 - openevolve.database - INFO - Island Status:
+2026-03-26 19:49:53,060 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.7400, avg=0.7400, diversity=0.00, gen=0 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 19:49:53,060 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-26 19:49:53,060 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-26 19:49:53,060 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 20 iterations (total: 21)
+2026-03-26 19:49:53,074 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-03-26 19:49:53,092 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-03-26 19:49:53,093 - openevolve.evaluator - INFO - Successfully loaded evaluation function from prompt_opt/openevolve_opt.py
+2026-03-26 19:49:53,093 - openevolve.evaluator - INFO - Initialized evaluator with prompt_opt/openevolve_opt.py
+2026-03-26 19:49:53,094 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 19:49:59,638 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-26 19:53:16,603 - openevolve.evaluator - INFO - Evaluated program 65cc746a-0202-44b2-a23d-e5f9935b1b21 in 197.17s: combined_score=0.6400, length=345.0000
+2026-03-26 19:53:16,605 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 19:53:16,611 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'length': 49}
+2026-03-26 19:53:16,611 - openevolve.process_parallel - INFO - Iteration 1: Program 65cc746a-0202-44b2-a23d-e5f9935b1b21 (parent: ae0cb634-04c2-4278-8b3a-c7f6619763b6) completed in 203.51s
+2026-03-26 19:53:16,611 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6400, length=345.0000
+2026-03-26 19:53:16,611 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 1
+2026-03-26 19:53:16,611 - openevolve.database - INFO - Island Status:
+2026-03-26 19:53:16,611 - openevolve.database - INFO -  * Island 0: 2 programs, best=0.7400, avg=0.6900, diversity=48.80, gen=1 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 19:53:16,611 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-26 19:53:16,611 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-26 19:53:16,612 - openevolve.database - INFO - Saved database with 2 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_1
+2026-03-26 19:53:16,612 - openevolve.controller - INFO - Saved best program at checkpoint 1 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 19:53:16,612 - openevolve.controller - INFO - Saved checkpoint at iteration 1 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_1
+2026-03-26 19:56:38,227 - openevolve.evaluator - INFO - Evaluated program 46ce3e78-957b-412e-bed1-a1769ff1732a in 198.81s: combined_score=0.6400, length=231.0000
+2026-03-26 19:56:38,231 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 19:56:38,237 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'length': 31}
+2026-03-26 19:56:38,238 - openevolve.process_parallel - INFO - Iteration 2: Program 46ce3e78-957b-412e-bed1-a1769ff1732a (parent: ae0cb634-04c2-4278-8b3a-c7f6619763b6) completed in 201.63s
+2026-03-26 19:56:38,238 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6400, length=231.0000
+2026-03-26 19:56:38,238 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 2
+2026-03-26 19:56:38,238 - openevolve.database - INFO - Island Status:
+2026-03-26 19:56:38,238 - openevolve.database - INFO -    Island 0: 3 programs, best=0.7400, avg=0.6733, diversity=32.87, gen=1 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 19:56:38,238 - openevolve.database - INFO -  * Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=1
+2026-03-26 19:56:38,238 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-26 19:56:38,239 - openevolve.database - INFO - Saved database with 3 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_2
+2026-03-26 19:56:38,239 - openevolve.controller - INFO - Saved best program at checkpoint 2 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 19:56:38,239 - openevolve.controller - INFO - Saved checkpoint at iteration 2 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_2
+2026-03-26 19:58:18,033 - openevolve.evaluator - INFO - Evaluated program 8808ccac-3400-4736-a496-338562bb7542 in 97.00s: combined_score=0.6400, length=231.0000
+2026-03-26 19:58:18,036 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 19:58:18,045 - openevolve.process_parallel - INFO - Iteration 3: Program 8808ccac-3400-4736-a496-338562bb7542 (parent: ae0cb634-04c2-4278-8b3a-c7f6619763b6) completed in 99.80s
+2026-03-26 19:58:18,045 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6400, length=231.0000
+2026-03-26 19:58:18,045 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 3
+2026-03-26 19:58:18,045 - openevolve.database - INFO - Island Status:
+2026-03-26 19:58:18,045 - openevolve.database - INFO -    Island 0: 4 programs, best=0.7400, avg=0.6650, diversity=24.73, gen=1 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 19:58:18,045 - openevolve.database - INFO -    Island 1: 1 programs, best=0.7400, avg=0.7400, diversity=0.00, gen=1
+2026-03-26 19:58:18,045 - openevolve.database - INFO -  * Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=1
+2026-03-26 19:58:18,046 - openevolve.database - INFO - Saved database with 5 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_3
+2026-03-26 19:58:18,046 - openevolve.controller - INFO - Saved best program at checkpoint 3 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 19:58:18,046 - openevolve.controller - INFO - Saved checkpoint at iteration 3 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_3
+2026-03-26 19:59:58,799 - openevolve.evaluator - INFO - Evaluated program ad04f98e-1887-49f4-8243-371041fb0e33 in 98.28s: combined_score=0.6200, length=198.0000
+2026-03-26 19:59:58,802 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 19:59:58,805 - openevolve.process_parallel - INFO - Iteration 4: Program ad04f98e-1887-49f4-8243-371041fb0e33 (parent: 65cc746a-0202-44b2-a23d-e5f9935b1b21) completed in 100.77s
+2026-03-26 19:59:58,805 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6200, length=198.0000
+2026-03-26 19:59:58,805 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 4
+2026-03-26 19:59:58,805 - openevolve.database - INFO - Island Status:
+2026-03-26 19:59:58,805 - openevolve.database - INFO -  * Island 0: 5 programs, best=0.7400, avg=0.6560, diversity=14.53, gen=2 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 19:59:58,805 - openevolve.database - INFO -    Island 1: 1 programs, best=0.7400, avg=0.7400, diversity=0.00, gen=1
+2026-03-26 19:59:58,805 - openevolve.database - INFO -    Island 2: 1 programs, best=0.7400, avg=0.7400, diversity=0.00, gen=1
+2026-03-26 19:59:58,806 - openevolve.database - INFO - Saved database with 7 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_4
+2026-03-26 19:59:58,806 - openevolve.controller - INFO - Saved best program at checkpoint 4 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 19:59:58,806 - openevolve.controller - INFO - Saved checkpoint at iteration 4 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_4
+2026-03-26 20:03:18,217 - openevolve.evaluator - INFO - Evaluated program d6926d7f-2f45-4e25-aa84-0827f29d8846 in 196.61s: combined_score=0.6300, length=231.0000
+2026-03-26 20:03:18,219 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:03:18,225 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'length': 31}
+2026-03-26 20:03:18,225 - openevolve.process_parallel - INFO - Iteration 5: Program d6926d7f-2f45-4e25-aa84-0827f29d8846 (parent: 654c41a1-79bf-41fd-8f35-745677acadb4) completed in 199.42s
+2026-03-26 20:03:18,226 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6300, length=231.0000
+2026-03-26 20:03:18,226 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 5
+2026-03-26 20:03:18,226 - openevolve.database - INFO - Island Status:
+2026-03-26 20:03:18,226 - openevolve.database - INFO -    Island 0: 5 programs, best=0.7400, avg=0.6560, diversity=14.53, gen=2 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:03:18,226 - openevolve.database - INFO -  * Island 1: 2 programs, best=0.7400, avg=0.6850, diversity=35.90, gen=2 (best: d6926d7f-2f45-4e25-aa84-0827f29d8846)
+2026-03-26 20:03:18,226 - openevolve.database - INFO -    Island 2: 1 programs, best=0.7400, avg=0.7400, diversity=0.00, gen=1
+2026-03-26 20:03:18,227 - openevolve.database - INFO - Saved database with 8 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_5
+2026-03-26 20:03:18,227 - openevolve.controller - INFO - Saved best program at checkpoint 5 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:03:18,227 - openevolve.controller - INFO - Saved checkpoint at iteration 5 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_5
+2026-03-26 20:04:59,010 - openevolve.evaluator - INFO - Evaluated program bb01fe0b-5fb1-4366-9afc-8b4eaafde225 in 97.99s: combined_score=0.6300, length=231.0000
+2026-03-26 20:04:59,012 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:04:59,019 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'length': 31}
+2026-03-26 20:04:59,020 - openevolve.process_parallel - INFO - Iteration 6: Program bb01fe0b-5fb1-4366-9afc-8b4eaafde225 (parent: 6b6ca868-3efb-4e9e-ac82-bc0b2b5e322d) completed in 100.79s
+2026-03-26 20:04:59,020 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6300, length=231.0000
+2026-03-26 20:04:59,020 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 6
+2026-03-26 20:04:59,020 - openevolve.database - INFO - Island Status:
+2026-03-26 20:04:59,020 - openevolve.database - INFO -    Island 0: 5 programs, best=0.7400, avg=0.6560, diversity=14.53, gen=2 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:04:59,020 - openevolve.database - INFO -    Island 1: 2 programs, best=0.7400, avg=0.6850, diversity=35.90, gen=2 (best: d6926d7f-2f45-4e25-aa84-0827f29d8846)
+2026-03-26 20:04:59,020 - openevolve.database - INFO -  * Island 2: 2 programs, best=0.7400, avg=0.6850, diversity=35.90, gen=2 (best: bb01fe0b-5fb1-4366-9afc-8b4eaafde225)
+2026-03-26 20:04:59,049 - openevolve.database - INFO - Saved database with 9 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_6
+2026-03-26 20:04:59,049 - openevolve.controller - INFO - Saved best program at checkpoint 6 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:04:59,049 - openevolve.controller - INFO - Saved checkpoint at iteration 6 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_6
+2026-03-26 20:05:58,890 - openevolve.evaluator - INFO - Evaluated program cb34bd1d-1e56-4f36-ae18-bcba68dbd675 in 57.78s: combined_score=0.6300, length=339.0000
+2026-03-26 20:05:58,891 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:05:58,900 - openevolve.process_parallel - INFO - Iteration 7: Program cb34bd1d-1e56-4f36-ae18-bcba68dbd675 (parent: ae0cb634-04c2-4278-8b3a-c7f6619763b6) completed in 59.88s
+2026-03-26 20:05:58,900 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6300, length=339.0000
+2026-03-26 20:05:58,900 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 7
+2026-03-26 20:05:58,900 - openevolve.database - INFO - Island Status:
+2026-03-26 20:05:58,900 - openevolve.database - INFO -  * Island 0: 6 programs, best=0.7400, avg=0.6517, diversity=14.53, gen=3 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:05:58,900 - openevolve.database - INFO -    Island 1: 2 programs, best=0.7400, avg=0.6850, diversity=35.90, gen=2 (best: d6926d7f-2f45-4e25-aa84-0827f29d8846)
+2026-03-26 20:05:58,900 - openevolve.database - INFO -    Island 2: 2 programs, best=0.7400, avg=0.6850, diversity=35.90, gen=2 (best: bb01fe0b-5fb1-4366-9afc-8b4eaafde225)
+2026-03-26 20:05:58,901 - openevolve.database - INFO - Saved database with 10 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_7
+2026-03-26 20:05:58,901 - openevolve.controller - INFO - Saved best program at checkpoint 7 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:05:58,902 - openevolve.controller - INFO - Saved checkpoint at iteration 7 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_7
+2026-03-26 20:06:12,444 - openevolve.evaluator - INFO - Evaluated program da677ff9-962d-45e8-8595-05793459eb53 in 12.05s: combined_score=0.7300, length=41.0000
+2026-03-26 20:06:12,446 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:06:12,447 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'length': 0}
+2026-03-26 20:06:12,448 - openevolve.process_parallel - INFO - Iteration 8: Program da677ff9-962d-45e8-8595-05793459eb53 (parent: d6926d7f-2f45-4e25-aa84-0827f29d8846) completed in 13.55s
+2026-03-26 20:06:12,448 - openevolve.process_parallel - INFO - Metrics: combined_score=0.7300, length=41.0000
+2026-03-26 20:06:12,448 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 8
+2026-03-26 20:06:12,448 - openevolve.database - INFO - Island Status:
+2026-03-26 20:06:12,448 - openevolve.database - INFO -    Island 0: 6 programs, best=0.7400, avg=0.6517, diversity=14.53, gen=3 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:06:12,448 - openevolve.database - INFO -  * Island 1: 3 programs, best=0.7400, avg=0.7000, diversity=24.00, gen=3 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:06:12,448 - openevolve.database - INFO -    Island 2: 2 programs, best=0.7400, avg=0.6850, diversity=35.90, gen=2 (best: bb01fe0b-5fb1-4366-9afc-8b4eaafde225)
+2026-03-26 20:06:12,449 - openevolve.database - INFO - Saved database with 11 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_8
+2026-03-26 20:06:12,449 - openevolve.controller - INFO - Saved best program at checkpoint 8 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:06:12,449 - openevolve.controller - INFO - Saved checkpoint at iteration 8 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_8
+2026-03-26 20:07:14,811 - openevolve.evaluator - INFO - Evaluated program 68cb4535-1c84-415f-97e3-84d9b31a516c in 59.36s: combined_score=0.6200, length=300.0000
+2026-03-26 20:07:14,813 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:07:14,816 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'length': 42}
+2026-03-26 20:07:14,816 - openevolve.process_parallel - INFO - Iteration 9: Program 68cb4535-1c84-415f-97e3-84d9b31a516c (parent: bb01fe0b-5fb1-4366-9afc-8b4eaafde225) completed in 62.37s
+2026-03-26 20:07:14,816 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6200, length=300.0000
+2026-03-26 20:07:14,816 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 9
+2026-03-26 20:07:14,816 - openevolve.database - INFO - Island Status:
+2026-03-26 20:07:14,817 - openevolve.database - INFO -    Island 0: 6 programs, best=0.7400, avg=0.6517, diversity=14.53, gen=3 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:07:14,817 - openevolve.database - INFO -    Island 1: 3 programs, best=0.7400, avg=0.7000, diversity=24.00, gen=3 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:07:14,817 - openevolve.database - INFO -  * Island 2: 3 programs, best=0.7400, avg=0.6633, diversity=49.20, gen=3 (best: bb01fe0b-5fb1-4366-9afc-8b4eaafde225)
+2026-03-26 20:07:14,818 - openevolve.database - INFO - Saved database with 12 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_9
+2026-03-26 20:07:14,818 - openevolve.controller - INFO - Saved best program at checkpoint 9 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:07:14,818 - openevolve.controller - INFO - Saved checkpoint at iteration 9 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_9
+2026-03-26 20:08:16,642 - openevolve.evaluator - INFO - Evaluated program d69eef82-c2a7-4c22-98e5-dcd88d614312 in 58.01s: combined_score=0.6400, length=99.0000
+2026-03-26 20:08:16,644 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:08:16,645 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'length': 9}
+2026-03-26 20:08:16,645 - openevolve.process_parallel - INFO - Iteration 10: Program d69eef82-c2a7-4c22-98e5-dcd88d614312 (parent: ae0cb634-04c2-4278-8b3a-c7f6619763b6) completed in 61.83s
+2026-03-26 20:08:16,645 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6400, length=99.0000
+2026-03-26 20:08:16,645 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 10
+2026-03-26 20:08:16,645 - openevolve.database - INFO - Island Status:
+2026-03-26 20:08:16,645 - openevolve.database - INFO -  * Island 0: 7 programs, best=0.7400, avg=0.6500, diversity=14.53, gen=4 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:08:16,645 - openevolve.database - INFO -    Island 1: 3 programs, best=0.7400, avg=0.7000, diversity=24.00, gen=3 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:08:16,645 - openevolve.database - INFO -    Island 2: 3 programs, best=0.7400, avg=0.6633, diversity=49.20, gen=3 (best: bb01fe0b-5fb1-4366-9afc-8b4eaafde225)
+2026-03-26 20:08:16,647 - openevolve.database - INFO - Saved database with 13 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_10
+2026-03-26 20:08:16,648 - openevolve.controller - INFO - Saved best program at checkpoint 10 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:08:16,648 - openevolve.controller - INFO - Saved checkpoint at iteration 10 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_10
+2026-03-26 20:08:21,924 - openevolve.evaluator - INFO - Evaluated program dd8dd170-f9c5-4d27-b38d-1edbf29d1dd6 in 2.47s: combined_score=0.2000, length=379.0000
+2026-03-26 20:08:21,926 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:08:21,926 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'length': 49}
+2026-03-26 20:08:21,926 - openevolve.process_parallel - INFO - Iteration 11: Program dd8dd170-f9c5-4d27-b38d-1edbf29d1dd6 (parent: da677ff9-962d-45e8-8595-05793459eb53) completed in 5.28s
+2026-03-26 20:08:21,926 - openevolve.process_parallel - INFO - Metrics: combined_score=0.2000, length=379.0000
+2026-03-26 20:08:21,926 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 11
+2026-03-26 20:08:21,927 - openevolve.database - INFO - Island Status:
+2026-03-26 20:08:21,927 - openevolve.database - INFO -    Island 0: 7 programs, best=0.7400, avg=0.6500, diversity=14.53, gen=4 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:08:21,927 - openevolve.database - INFO -  * Island 1: 4 programs, best=0.7400, avg=0.5750, diversity=57.30, gen=4 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:08:21,927 - openevolve.database - INFO -    Island 2: 3 programs, best=0.7400, avg=0.6633, diversity=49.20, gen=3 (best: bb01fe0b-5fb1-4366-9afc-8b4eaafde225)
+2026-03-26 20:08:21,928 - openevolve.database - INFO - Saved database with 14 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_11
+2026-03-26 20:08:21,929 - openevolve.controller - INFO - Saved best program at checkpoint 11 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:08:21,929 - openevolve.controller - INFO - Saved checkpoint at iteration 11 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_11
+2026-03-26 20:09:36,156 - openevolve.evaluator - INFO - Evaluated program 4810936b-031d-4bd8-a144-6512d7acda2e in 70.31s: combined_score=0.6400, length=99.0000
+2026-03-26 20:09:36,158 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:09:36,166 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'length': 8}
+2026-03-26 20:09:36,167 - openevolve.process_parallel - INFO - Iteration 12: Program 4810936b-031d-4bd8-a144-6512d7acda2e (parent: bb01fe0b-5fb1-4366-9afc-8b4eaafde225) completed in 74.23s
+2026-03-26 20:09:36,167 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6400, length=99.0000
+2026-03-26 20:09:36,167 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 12
+2026-03-26 20:09:36,167 - openevolve.database - INFO - Island Status:
+2026-03-26 20:09:36,167 - openevolve.database - INFO -    Island 0: 7 programs, best=0.7400, avg=0.6500, diversity=14.53, gen=4 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:09:36,167 - openevolve.database - INFO -    Island 1: 4 programs, best=0.7400, avg=0.5750, diversity=57.30, gen=4 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:09:36,167 - openevolve.database - INFO -  * Island 2: 4 programs, best=0.7400, avg=0.6575, diversity=41.18, gen=4 (best: 4810936b-031d-4bd8-a144-6512d7acda2e)
+2026-03-26 20:09:36,168 - openevolve.database - INFO - Saved database with 15 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_12
+2026-03-26 20:09:36,168 - openevolve.controller - INFO - Saved best program at checkpoint 12 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:09:36,168 - openevolve.controller - INFO - Saved checkpoint at iteration 12 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_12
+2026-03-26 20:19:40,511 - openevolve.evaluator - WARNING - Stage 2 evaluation timed out after 600s
+2026-03-26 20:19:40,511 - openevolve.evaluator - INFO - Evaluated program 91f3b9bb-9afc-457f-87ec-d73daf4cb7c4 in 602.45s: combined_score=0.6000, length=96.0000, stage2_passed=0.0000, timeout=1.0000
+2026-03-26 20:23:17,328 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:23:17,333 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'length': 8}
+2026-03-26 20:23:17,334 - openevolve.database - INFO - Island 0 MAP-Elites coverage reached 10.0% (5/50 cells)
+2026-03-26 20:23:17,334 - openevolve.process_parallel - INFO - Performing migration at iteration 13
+2026-03-26 20:23:17,334 - openevolve.database - INFO - Performing migration between islands
+2026-03-26 20:23:17,334 - openevolve.database - INFO - Migration completed at generation 5
+2026-03-26 20:23:17,334 - openevolve.database - INFO - Island Status:
+2026-03-26 20:23:17,334 - openevolve.database - INFO -  * Island 0: 8 programs, best=0.7400, avg=0.6438, diversity=13.25, gen=5 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:23:17,334 - openevolve.database - INFO -    Island 1: 4 programs, best=0.7400, avg=0.5750, diversity=57.30, gen=4 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:23:17,334 - openevolve.database - INFO -    Island 2: 4 programs, best=0.7400, avg=0.6575, diversity=41.18, gen=4 (best: 4810936b-031d-4bd8-a144-6512d7acda2e)
+2026-03-26 20:23:17,334 - openevolve.process_parallel - INFO - Iteration 13: Program 91f3b9bb-9afc-457f-87ec-d73daf4cb7c4 (parent: 65cc746a-0202-44b2-a23d-e5f9935b1b21) completed in 821.17s
+2026-03-26 20:23:17,334 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6000, length=96.0000, stage2_passed=0.0000, timeout=1.0000
+2026-03-26 20:23:17,334 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 13
+2026-03-26 20:23:17,335 - openevolve.database - INFO - Island Status:
+2026-03-26 20:23:17,335 - openevolve.database - INFO -  * Island 0: 8 programs, best=0.7400, avg=0.6438, diversity=13.25, gen=5 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:23:17,335 - openevolve.database - INFO -    Island 1: 4 programs, best=0.7400, avg=0.5750, diversity=57.30, gen=4 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:23:17,335 - openevolve.database - INFO -    Island 2: 4 programs, best=0.7400, avg=0.6575, diversity=41.18, gen=4 (best: 4810936b-031d-4bd8-a144-6512d7acda2e)
+2026-03-26 20:23:17,336 - openevolve.database - INFO - Saved database with 16 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_13
+2026-03-26 20:23:17,336 - openevolve.controller - INFO - Saved best program at checkpoint 13 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:23:17,337 - openevolve.controller - INFO - Saved checkpoint at iteration 13 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_13
+2026-03-26 20:23:28,292 - openevolve.evaluator - INFO - Evaluated program 543e2eff-48ec-44b9-a728-172e6cbf252a in 2.80s: combined_score=0.3500, length=175.0000
+2026-03-26 20:23:28,293 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:23:28,295 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'length': 19}
+2026-03-26 20:23:28,295 - openevolve.process_parallel - INFO - Iteration 14: Program 543e2eff-48ec-44b9-a728-172e6cbf252a (parent: da677ff9-962d-45e8-8595-05793459eb53) completed in 10.96s
+2026-03-26 20:23:28,295 - openevolve.process_parallel - INFO - Metrics: combined_score=0.3500, length=175.0000
+2026-03-26 20:23:28,295 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 14
+2026-03-26 20:23:28,295 - openevolve.database - INFO - Island Status:
+2026-03-26 20:23:28,296 - openevolve.database - INFO -    Island 0: 8 programs, best=0.7400, avg=0.6438, diversity=13.25, gen=5 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:23:28,296 - openevolve.database - INFO -  * Island 1: 5 programs, best=0.7400, avg=0.5300, diversity=31.45, gen=5 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:23:28,296 - openevolve.database - INFO -    Island 2: 4 programs, best=0.7400, avg=0.6575, diversity=41.18, gen=4 (best: 4810936b-031d-4bd8-a144-6512d7acda2e)
+2026-03-26 20:23:28,298 - openevolve.database - INFO - Saved database with 17 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_14
+2026-03-26 20:23:28,298 - openevolve.controller - INFO - Saved best program at checkpoint 14 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:23:28,298 - openevolve.controller - INFO - Saved checkpoint at iteration 14 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_14
+2026-03-26 20:23:42,837 - openevolve.evaluator - INFO - Evaluated program 39308ea5-805d-4f19-b586-d7de8ba1bd88 in 10.66s: combined_score=0.7400, length=41.0000
+2026-03-26 20:23:42,839 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:23:42,840 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'length': 0}
+2026-03-26 20:23:42,841 - openevolve.process_parallel - INFO - Iteration 15: Program 39308ea5-805d-4f19-b586-d7de8ba1bd88 (parent: 6b6ca868-3efb-4e9e-ac82-bc0b2b5e322d) completed in 14.55s
+2026-03-26 20:23:42,841 - openevolve.process_parallel - INFO - Metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:23:42,841 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 15
+2026-03-26 20:23:42,841 - openevolve.database - INFO - Island Status:
+2026-03-26 20:23:42,841 - openevolve.database - INFO -    Island 0: 8 programs, best=0.7400, avg=0.6438, diversity=13.25, gen=5 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:23:42,841 - openevolve.database - INFO -    Island 1: 5 programs, best=0.7400, avg=0.5300, diversity=31.45, gen=5 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:23:42,841 - openevolve.database - INFO -  * Island 2: 5 programs, best=0.7400, avg=0.6740, diversity=34.10, gen=5 (best: 39308ea5-805d-4f19-b586-d7de8ba1bd88)
+2026-03-26 20:23:42,842 - openevolve.database - INFO - Saved database with 18 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_15
+2026-03-26 20:23:42,843 - openevolve.controller - INFO - Saved best program at checkpoint 15 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:23:42,843 - openevolve.controller - INFO - Saved checkpoint at iteration 15 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_15
+2026-03-26 20:23:54,566 - openevolve.evaluator - INFO - Evaluated program 357cabd5-6142-4f00-af6f-cf28da4a8d87 in 10.80s: combined_score=0.7200, length=41.0000
+2026-03-26 20:23:54,568 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:23:54,575 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'length': 0}
+2026-03-26 20:23:54,575 - openevolve.process_parallel - INFO - Iteration 16: Program 357cabd5-6142-4f00-af6f-cf28da4a8d87 (parent: d69eef82-c2a7-4c22-98e5-dcd88d614312) completed in 11.73s
+2026-03-26 20:23:54,575 - openevolve.process_parallel - INFO - Metrics: combined_score=0.7200, length=41.0000
+2026-03-26 20:23:54,575 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 16
+2026-03-26 20:23:54,575 - openevolve.database - INFO - Island Status:
+2026-03-26 20:23:54,575 - openevolve.database - INFO -  * Island 0: 9 programs, best=0.7400, avg=0.6522, diversity=18.80, gen=6 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:23:54,576 - openevolve.database - INFO -    Island 1: 5 programs, best=0.7400, avg=0.5300, diversity=31.45, gen=5 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:23:54,576 - openevolve.database - INFO -    Island 2: 5 programs, best=0.7400, avg=0.6740, diversity=34.10, gen=5 (best: 39308ea5-805d-4f19-b586-d7de8ba1bd88)
+2026-03-26 20:23:54,577 - openevolve.database - INFO - Saved database with 19 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_16
+2026-03-26 20:23:54,577 - openevolve.controller - INFO - Saved best program at checkpoint 16 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:23:54,577 - openevolve.controller - INFO - Saved checkpoint at iteration 16 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_16
+2026-03-26 20:24:07,183 - openevolve.evaluator - INFO - Evaluated program de4ebb32-d5e7-4433-9dc4-4407d3dfd966 in 10.38s: combined_score=0.7300, length=41.0000
+2026-03-26 20:24:07,185 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:24:07,187 - openevolve.process_parallel - INFO - Iteration 17: Program de4ebb32-d5e7-4433-9dc4-4407d3dfd966 (parent: 543e2eff-48ec-44b9-a728-172e6cbf252a) completed in 12.62s
+2026-03-26 20:24:07,187 - openevolve.process_parallel - INFO - Metrics: combined_score=0.7300, length=41.0000
+2026-03-26 20:24:07,187 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 17
+2026-03-26 20:24:07,187 - openevolve.database - INFO - Island Status:
+2026-03-26 20:24:07,187 - openevolve.database - INFO -    Island 0: 9 programs, best=0.7400, avg=0.6522, diversity=18.80, gen=6 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:24:07,187 - openevolve.database - INFO -  * Island 1: 6 programs, best=0.7400, avg=0.5633, diversity=31.45, gen=6 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:24:07,187 - openevolve.database - INFO -    Island 2: 5 programs, best=0.7400, avg=0.6740, diversity=34.10, gen=5 (best: 39308ea5-805d-4f19-b586-d7de8ba1bd88)
+2026-03-26 20:24:07,189 - openevolve.database - INFO - Saved database with 20 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_17
+2026-03-26 20:24:07,189 - openevolve.controller - INFO - Saved best program at checkpoint 17 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:24:07,189 - openevolve.controller - INFO - Saved checkpoint at iteration 17 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_17
+2026-03-26 20:24:41,025 - openevolve.evaluator - INFO - Evaluated program ef90873c-a9c8-4073-b17f-57a49f492326 in 29.53s: combined_score=0.6500, length=107.0000
+2026-03-26 20:24:41,027 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:24:41,030 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'length': 9}
+2026-03-26 20:24:41,030 - openevolve.database - INFO - Island 2 MAP-Elites coverage reached 10.0% (5/50 cells)
+2026-03-26 20:24:41,030 - openevolve.process_parallel - INFO - Iteration 18: Program ef90873c-a9c8-4073-b17f-57a49f492326 (parent: 39308ea5-805d-4f19-b586-d7de8ba1bd88) completed in 33.84s
+2026-03-26 20:24:41,030 - openevolve.process_parallel - INFO - Metrics: combined_score=0.6500, length=107.0000
+2026-03-26 20:24:41,031 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 18
+2026-03-26 20:24:41,031 - openevolve.database - INFO - Island Status:
+2026-03-26 20:24:41,031 - openevolve.database - INFO -    Island 0: 9 programs, best=0.7400, avg=0.6522, diversity=18.80, gen=6 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:24:41,031 - openevolve.database - INFO -    Island 1: 6 programs, best=0.7400, avg=0.5633, diversity=31.45, gen=6 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:24:41,031 - openevolve.database - INFO -  * Island 2: 6 programs, best=0.7400, avg=0.6700, diversity=34.10, gen=6 (best: 39308ea5-805d-4f19-b586-d7de8ba1bd88)
+2026-03-26 20:24:41,033 - openevolve.database - INFO - Saved database with 21 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_18
+2026-03-26 20:24:41,033 - openevolve.controller - INFO - Saved best program at checkpoint 18 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:24:41,033 - openevolve.controller - INFO - Saved checkpoint at iteration 18 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_18
+2026-03-26 20:25:14,785 - openevolve.evaluator - INFO - Evaluated program f58744fc-b0c0-4371-9789-fef5483779fc in 31.87s: combined_score=0.7000, length=132.0000
+2026-03-26 20:25:14,788 - openevolve.llm.ensemble - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 20:25:14,790 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'length': 13}
+2026-03-26 20:25:14,791 - openevolve.process_parallel - INFO - Iteration 19: Program f58744fc-b0c0-4371-9789-fef5483779fc (parent: ad04f98e-1887-49f4-8243-371041fb0e33) completed in 33.76s
+2026-03-26 20:25:14,791 - openevolve.process_parallel - INFO - Metrics: combined_score=0.7000, length=132.0000
+2026-03-26 20:25:14,791 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 19
+2026-03-26 20:25:14,791 - openevolve.database - INFO - Island Status:
+2026-03-26 20:25:14,791 - openevolve.database - INFO -  * Island 0: 10 programs, best=0.7400, avg=0.6570, diversity=18.80, gen=7 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:25:14,791 - openevolve.database - INFO -    Island 1: 6 programs, best=0.7400, avg=0.5633, diversity=31.45, gen=6 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:25:14,791 - openevolve.database - INFO -    Island 2: 6 programs, best=0.7400, avg=0.6700, diversity=34.10, gen=6 (best: 39308ea5-805d-4f19-b586-d7de8ba1bd88)
+2026-03-26 20:25:14,793 - openevolve.database - INFO - Saved database with 22 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_19
+2026-03-26 20:25:14,793 - openevolve.controller - INFO - Saved best program at checkpoint 19 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:25:14,793 - openevolve.controller - INFO - Saved checkpoint at iteration 19 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_19
+2026-03-26 20:25:46,378 - openevolve.evaluator - INFO - Evaluated program 1f8f6488-3d8b-44b6-9229-c9250258a20b in 29.01s: combined_score=0.5300, length=209.0000
+2026-03-26 20:25:46,386 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'length': 24}
+2026-03-26 20:25:46,386 - openevolve.database - INFO - Island 1 MAP-Elites coverage reached 10.0% (5/50 cells)
+2026-03-26 20:25:46,386 - openevolve.process_parallel - INFO - Iteration 20: Program 1f8f6488-3d8b-44b6-9229-c9250258a20b (parent: da677ff9-962d-45e8-8595-05793459eb53) completed in 31.59s
+2026-03-26 20:25:46,386 - openevolve.process_parallel - INFO - Metrics: combined_score=0.5300, length=209.0000
+2026-03-26 20:25:46,386 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 20
+2026-03-26 20:25:46,386 - openevolve.database - INFO - Island Status:
+2026-03-26 20:25:46,386 - openevolve.database - INFO -    Island 0: 10 programs, best=0.7400, avg=0.6570, diversity=18.80, gen=7 (best: ae0cb634-04c2-4278-8b3a-c7f6619763b6)
+2026-03-26 20:25:46,386 - openevolve.database - INFO -  * Island 1: 7 programs, best=0.7400, avg=0.5586, diversity=17.67, gen=7 (best: da677ff9-962d-45e8-8595-05793459eb53)
+2026-03-26 20:25:46,386 - openevolve.database - INFO -    Island 2: 6 programs, best=0.7400, avg=0.6700, diversity=34.10, gen=6 (best: 39308ea5-805d-4f19-b586-d7de8ba1bd88)
+2026-03-26 20:25:46,389 - openevolve.database - INFO - Saved database with 23 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_20
+2026-03-26 20:25:46,389 - openevolve.controller - INFO - Saved best program at checkpoint 20 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:25:46,389 - openevolve.controller - INFO - Saved checkpoint at iteration 20 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_20
+2026-03-26 20:25:46,389 - openevolve.process_parallel - INFO - ✅ Evolution completed - Maximum iterations reached
+2026-03-26 20:25:46,391 - openevolve.database - INFO - Saved database with 23 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_20
+2026-03-26 20:25:46,391 - openevolve.controller - INFO - Saved best program at checkpoint 20 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:25:46,391 - openevolve.controller - INFO - Saved checkpoint at iteration 20 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/checkpoints/checkpoint_20
+2026-03-26 20:25:46,426 - openevolve.process_parallel - INFO - Stopped process pool
+2026-03-26 20:25:46,426 - openevolve.controller - INFO - Using tracked best program: ae0cb634-04c2-4278-8b3a-c7f6619763b6
+2026-03-26 20:25:46,426 - openevolve.controller - INFO - Evolution complete. Best program has metrics: combined_score=0.7400, length=41.0000
+2026-03-26 20:25:46,426 - openevolve.controller - INFO - Saved best program to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/best/best_program.txt with program info to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_1/best/best_program_info.json
