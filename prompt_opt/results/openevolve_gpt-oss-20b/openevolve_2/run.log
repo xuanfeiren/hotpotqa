@@ -1,0 +1,351 @@
+2026-03-26 23:35:19,354 - INFO - Logging to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/logs/openevolve_20260326_233519.log
+2026-03-26 23:35:19,358 - INFO - Set random seed to 42 for reproducibility
+2026-03-26 23:35:19,378 - INFO - Initialized OpenAI LLM with model: openai/gpt-oss-20b
+2026-03-26 23:35:19,378 - INFO - Initialized LLM ensemble with models: openai/gpt-oss-20b (weight: 1.00)
+2026-03-26 23:35:19,384 - INFO - Initialized prompt sampler
+2026-03-26 23:35:19,384 - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-03-26 23:35:19,384 - INFO - Initialized program database with 0 programs
+2026-03-26 23:35:20,780 - INFO - Successfully loaded evaluation function from prompt_opt/openevolve_opt.py
+2026-03-26 23:35:20,780 - INFO - Initialized evaluator with prompt_opt/openevolve_opt.py
+2026-03-26 23:35:20,780 - INFO - Initialized OpenEvolve with prompt_opt/openevolve_initial_prompt.txt
+2026-03-26 23:35:20,780 - INFO - Adding initial program to database
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:13,  1.39it/s]OE Eval (p=10):  25%|██▌       | 5/20 [00:00<00:02,  7.18it/s]OE Eval (p=10):  35%|███▌      | 7/20 [00:01<00:01,  6.65it/s]OE Eval (p=10):  70%|███████   | 14/20 [00:01<00:00, 14.72it/s]OE Eval (p=10):  85%|████████▌ | 17/20 [00:01<00:00, 12.36it/s]                                                               Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-26 23:35:23,784 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+*** NEW BEST SCORE: 0.7500 ***
+[OpenEvolve] Accuracy: 0.750 | Best: 0.750 | Total Calls: 20 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<01:23,  1.19it/s]OE Eval (p=10):   2%|▏         | 2/100 [00:00<00:42,  2.29it/s]OE Eval (p=10):  11%|█         | 11/100 [00:01<00:08, 11.00it/s]OE Eval (p=10):  14%|█▍        | 14/100 [00:01<00:07, 11.23it/s]OE Eval (p=10):  16%|█▌        | 16/100 [00:01<00:07, 11.01it/s]OE Eval (p=10):  21%|██        | 21/100 [00:02<00:05, 14.31it/s]OE Eval (p=10):  24%|██▍       | 24/100 [00:02<00:05, 13.49it/s]OE Eval (p=10):  29%|██▉       | 29/100 [00:02<00:04, 16.07it/s]OE Eval (p=10):  31%|███       | 31/100 [00:02<00:04, 14.89it/s]OE Eval (p=10):  34%|███▍      | 34/100 [00:03<00:05, 12.11it/s]OE Eval (p=10):  41%|████      | 41/100 [00:03<00:04, 14.38it/s]OE Eval (p=10):  44%|████▍     | 44/100 [00:03<00:03, 14.19it/s]OE Eval (p=10):  46%|████▌     | 46/100 [00:03<00:03, 14.84it/s]OE Eval (p=10):  50%|█████     | 50/100 [00:04<00:03, 16.24it/s]OE Eval (p=10):  52%|█████▏    | 52/100 [00:04<00:03, 13.29it/s]OE Eval (p=10):  55%|█████▌    | 55/100 [00:04<00:03, 13.82it/s]OE Eval (p=10):  57%|█████▋    | 57/100 [00:04<00:03, 12.90it/s]OE Eval (p=10):  63%|██████▎   | 63/100 [00:04<00:02, 15.21it/s]OE Eval (p=10):  65%|██████▌   | 65/100 [00:05<00:02, 15.34it/s]OE Eval (p=10):  67%|██████▋   | 67/100 [00:05<00:02, 13.49it/s]OE Eval (p=10):  73%|███████▎  | 73/100 [00:05<00:02, 13.40it/s]OE Eval (p=10):  77%|███████▋  | 77/100 [00:06<00:01, 13.43it/s]OE Eval (p=10):  79%|███████▉  | 79/100 [00:06<00:01, 13.83it/s]OE Eval (p=10):  85%|████████▌ | 85/100 [00:06<00:00, 20.51it/s]OE Eval (p=10):  88%|████████▊ | 88/100 [00:06<00:00, 13.63it/s]OE Eval (p=10):  91%|█████████ | 91/100 [00:07<00:00, 12.37it/s]OE Eval (p=10):  96%|█████████▌| 96/100 [00:07<00:00, 16.54it/s]OE Eval (p=10):  99%|█████████▉| 99/100 [00:07<00:00, 14.92it/s]                                                                2026-03-26 23:35:31,271 - INFO - Evaluated program 69d12916-b697-48cf-8ee4-d13bf7f321bd in 10.49s: combined_score=0.7400, length=41.0000
+2026-03-26 23:35:31,271 - INFO - New MAP-Elites cell occupied in island 0: {'length': 25}
+2026-03-26 23:35:31,272 - INFO - Initialized process parallel controller with 1 workers
+2026-03-26 23:35:31,272 - INFO - Set max None tasks per child
+2026-03-26 23:35:31,272 - INFO - Started process pool with 1 processes
+2026-03-26 23:35:31,272 - INFO - Using island-based evolution with 3 islands
+2026-03-26 23:35:31,272 - INFO - Island Status:
+2026-03-26 23:35:31,272 - INFO -  * Island 0: 1 programs, best=0.7400, avg=0.7400, diversity=0.00, gen=0 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-26 23:35:31,272 - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-26 23:35:31,272 - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-26 23:35:31,272 - INFO - Starting process-based evolution from iteration 1 for 20 iterations (total: 21)
+[OpenEvolve] Accuracy: 0.740 | Best: 0.750 | Total Calls: 120 (Tasks: 100)
+2026-03-26 23:35:31,285 - INFO - Early stopping disabled
+2026-03-26 23:35:31,302 - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-03-26 23:35:31,304 - INFO - Successfully loaded evaluation function from prompt_opt/openevolve_opt.py
+2026-03-26 23:35:31,304 - INFO - Initialized evaluator with prompt_opt/openevolve_opt.py
+2026-03-26 23:35:31,304 - INFO - Sampled model: openai/gpt-oss-20b
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:14,  1.31it/s]OE Eval (p=10):  10%|█         | 2/20 [00:00<00:07,  2.34it/s]OE Eval (p=10):  55%|█████▌    | 11/20 [00:01<00:00, 10.40it/s]OE Eval (p=10):  65%|██████▌   | 13/20 [00:15<00:11,  1.60s/it]OE Eval (p=10):  75%|███████▌  | 15/20 [00:16<00:06,  1.36s/it]OE Eval (p=10): 100%|██████████| 20/20 [00:17<00:00,  1.17it/s]                                                               [OpenEvolve] Accuracy: 0.550 | Best: 0.750 | Total Calls: 140 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<01:15,  1.32it/s]OE Eval (p=10):   3%|▎         | 3/100 [00:00<00:26,  3.63it/s]OE Eval (p=10):   8%|▊         | 8/100 [00:01<00:08, 10.92it/s]OE Eval (p=10):  11%|█         | 11/100 [00:02<00:22,  3.96it/s]OE Eval (p=10):  14%|█▍        | 14/100 [00:02<00:15,  5.48it/s]OE Eval (p=10):  26%|██▌       | 26/100 [00:18<01:09,  1.07it/s]OE Eval (p=10):  27%|██▋       | 27/100 [00:18<01:04,  1.14it/s]OE Eval (p=10):  32%|███▏      | 32/100 [00:49<03:01,  2.68s/it]OE Eval (p=10):  45%|████▌     | 45/100 [01:05<01:42,  1.86s/it]OE Eval (p=10):  76%|███████▌  | 76/100 [01:19<00:22,  1.05it/s]                                                                2026-03-26 23:37:13,349 - INFO - Evaluated program cab13e71-1c05-45ec-b0d5-490bf2bbc498 in 99.23s: combined_score=0.6400, length=231.0000
+2026-03-26 23:37:13,351 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 23:37:13,352 - INFO - New MAP-Elites cell occupied in island 0: {'length': 49}
+2026-03-26 23:37:13,352 - INFO - Iteration 1: Program cab13e71-1c05-45ec-b0d5-490bf2bbc498 (parent: 69d12916-b697-48cf-8ee4-d13bf7f321bd) completed in 102.05s
+2026-03-26 23:37:13,352 - INFO - Metrics: combined_score=0.6400, length=231.0000
+2026-03-26 23:37:13,352 - INFO - Checkpoint interval reached at iteration 1
+2026-03-26 23:37:13,352 - INFO - Island Status:
+2026-03-26 23:37:13,352 - INFO -  * Island 0: 2 programs, best=0.7400, avg=0.6900, diversity=35.90, gen=1 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-26 23:37:13,352 - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-26 23:37:13,352 - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-26 23:37:13,353 - INFO - Saved database with 2 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_1
+2026-03-26 23:37:13,353 - INFO - Saved best program at checkpoint 1 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 23:37:13,353 - INFO - Saved checkpoint at iteration 1 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_1
+[OpenEvolve] Accuracy: 0.640 | Best: 0.750 | Total Calls: 240 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:11,  1.69it/s]OE Eval (p=10):  15%|█▌        | 3/20 [00:00<00:03,  4.94it/s]OE Eval (p=10):  20%|██        | 4/20 [00:00<00:02,  5.93it/s]OE Eval (p=10):  55%|█████▌    | 11/20 [00:01<00:00, 15.04it/s]OE Eval (p=10):  70%|███████   | 14/20 [00:16<00:10,  1.70s/it]                                                               [OpenEvolve] Accuracy: 0.550 | Best: 0.750 | Total Calls: 260 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:16<26:40, 16.17s/it]OE Eval (p=10):  25%|██▌       | 25/100 [00:17<00:39,  1.88it/s]OE Eval (p=10):  28%|██▊       | 28/100 [00:48<02:21,  1.97s/it]OE Eval (p=10):  33%|███▎      | 33/100 [00:49<01:38,  1.47s/it]OE Eval (p=10):  76%|███████▌  | 76/100 [01:18<00:20,  1.15it/s]OE Eval (p=10):  77%|███████▋  | 77/100 [01:19<00:20,  1.14it/s]                                                                2026-03-26 23:38:53,280 - INFO - Evaluated program 52c99016-c4f2-42b6-959f-09a3302d912c in 97.12s: combined_score=0.6400, length=231.0000
+2026-03-26 23:38:53,282 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 23:38:53,285 - INFO - Iteration 2: Program 52c99016-c4f2-42b6-959f-09a3302d912c (parent: 69d12916-b697-48cf-8ee4-d13bf7f321bd) completed in 99.93s
+2026-03-26 23:38:53,286 - INFO - Metrics: combined_score=0.6400, length=231.0000
+2026-03-26 23:38:53,286 - INFO - Checkpoint interval reached at iteration 2
+2026-03-26 23:38:53,286 - INFO - Island Status:
+2026-03-26 23:38:53,286 - INFO -    Island 0: 3 programs, best=0.7400, avg=0.6733, diversity=23.93, gen=1 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-26 23:38:53,286 - INFO -  * Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=1
+2026-03-26 23:38:53,286 - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-03-26 23:38:53,286 - INFO - Saved database with 3 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_2
+2026-03-26 23:38:53,286 - INFO - Saved best program at checkpoint 2 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 23:38:53,286 - INFO - Saved checkpoint at iteration 2 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_2
+[OpenEvolve] Accuracy: 0.640 | Best: 0.750 | Total Calls: 360 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:14,  1.32it/s]OE Eval (p=10):  55%|█████▌    | 11/20 [00:16<00:13,  1.52s/it]                                                               [OpenEvolve] Accuracy: 0.550 | Best: 0.750 | Total Calls: 380 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<00:40,  2.42it/s]OE Eval (p=10):   3%|▎         | 3/100 [00:00<00:26,  3.67it/s]OE Eval (p=10):  10%|█         | 10/100 [00:01<00:12,  7.08it/s]OE Eval (p=10):  11%|█         | 11/100 [00:02<00:17,  5.18it/s]OE Eval (p=10):  15%|█▌        | 15/100 [00:02<00:13,  6.37it/s]OE Eval (p=10):  22%|██▏       | 22/100 [00:02<00:06, 11.45it/s]OE Eval (p=10):  25%|██▌       | 25/100 [00:18<01:43,  1.37s/it]OE Eval (p=10):  31%|███       | 31/100 [02:59<13:34, 11.80s/it]OE Eval (p=10):  32%|███▏      | 32/100 [03:00<12:13, 10.79s/it]OE Eval (p=10):  42%|████▏     | 42/100 [03:13<05:20,  5.52s/it]2026-03-26 23:49:13,213 - WARNING - Stage 2 evaluation timed out after 600s
+2026-03-26 23:49:13,213 - INFO - Evaluated program ab7148b4-a7f4-465e-a526-3220c0c21d97 in 617.13s: combined_score=0.5500, length=231.0000, stage2_passed=0.0000, timeout=1.0000
+OE Eval (p=10):  43%|████▎     | 43/100 [13:42<49:05, 51.67s/it]OE Eval (p=10):  45%|████▌     | 45/100 [13:44<39:11, 42.75s/it]                                                                2026-03-26 23:52:57,711 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 23:52:57,720 - INFO - Iteration 3: Program ab7148b4-a7f4-465e-a526-3220c0c21d97 (parent: 69d12916-b697-48cf-8ee4-d13bf7f321bd) completed in 844.43s
+2026-03-26 23:52:57,720 - INFO - Metrics: combined_score=0.5500, length=231.0000, stage2_passed=0.0000, timeout=1.0000
+2026-03-26 23:52:57,720 - INFO - Checkpoint interval reached at iteration 3
+2026-03-26 23:52:57,721 - INFO - Island Status:
+2026-03-26 23:52:57,721 - INFO -    Island 0: 4 programs, best=0.7400, avg=0.6425, diversity=17.95, gen=1 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-26 23:52:57,721 - INFO -    Island 1: 1 programs, best=0.7400, avg=0.7400, diversity=0.00, gen=1
+2026-03-26 23:52:57,721 - INFO -  * Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=1
+2026-03-26 23:52:57,722 - INFO - Saved database with 5 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_3
+2026-03-26 23:52:57,722 - INFO - Saved best program at checkpoint 3 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 23:52:57,722 - INFO - Saved checkpoint at iteration 3 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_3
+[OpenEvolve] Accuracy: 0.620 | Best: 0.750 | Total Calls: 480 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:16,  1.15it/s]OE Eval (p=10):  35%|███▌      | 7/20 [00:01<00:01,  9.06it/s]OE Eval (p=10):  55%|█████▌    | 11/20 [00:01<00:00, 12.26it/s]OE Eval (p=10):  75%|███████▌  | 15/20 [00:01<00:00, 12.41it/s]OE Eval (p=10):  90%|█████████ | 18/20 [00:01<00:00, 12.02it/s]                                                               [OpenEvolve] Accuracy: 0.650 | Best: 0.750 | Total Calls: 500 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [02:56<4:50:28, 176.04s/it]                                                                  2026-03-26 23:56:01,590 - INFO - Evaluated program 82100c17-8d2b-4d65-b5d0-7e6bbc08a22a in 178.82s: combined_score=0.6300, length=255.0000
+2026-03-26 23:56:01,591 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 23:56:01,593 - INFO - Iteration 4: Program 82100c17-8d2b-4d65-b5d0-7e6bbc08a22a (parent: 69d12916-b697-48cf-8ee4-d13bf7f321bd) completed in 183.88s
+2026-03-26 23:56:01,593 - INFO - Metrics: combined_score=0.6300, length=255.0000
+2026-03-26 23:56:01,593 - INFO - Checkpoint interval reached at iteration 4
+2026-03-26 23:56:01,593 - INFO - Island Status:
+2026-03-26 23:56:01,593 - INFO -  * Island 0: 5 programs, best=0.7400, avg=0.6400, diversity=19.08, gen=2 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-26 23:56:01,593 - INFO -    Island 1: 1 programs, best=0.7400, avg=0.7400, diversity=0.00, gen=1
+2026-03-26 23:56:01,593 - INFO -    Island 2: 1 programs, best=0.7400, avg=0.7400, diversity=0.00, gen=1
+2026-03-26 23:56:01,595 - INFO - Saved database with 7 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_4
+2026-03-26 23:56:01,595 - INFO - Saved best program at checkpoint 4 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 23:56:01,595 - INFO - Saved checkpoint at iteration 4 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_4
+[OpenEvolve] Accuracy: 0.630 | Best: 0.750 | Total Calls: 600 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:12,  1.58it/s]OE Eval (p=10):  25%|██▌       | 5/20 [00:00<00:02,  5.81it/s]OE Eval (p=10):  65%|██████▌   | 13/20 [00:01<00:00, 16.43it/s]OE Eval (p=10):  85%|████████▌ | 17/20 [00:17<00:04,  1.40s/it]                                                               [OpenEvolve] Accuracy: 0.550 | Best: 0.750 | Total Calls: 620 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<01:23,  1.19it/s]OE Eval (p=10):  10%|█         | 10/100 [00:01<00:08, 10.42it/s]OE Eval (p=10):  12%|█▏        | 12/100 [00:16<02:40,  1.83s/it]OE Eval (p=10):  14%|█▍        | 14/100 [00:16<02:01,  1.42s/it]OE Eval (p=10):  29%|██▉       | 29/100 [00:47<02:12,  1.86s/it]OE Eval (p=10):  31%|███       | 31/100 [00:47<01:55,  1.67s/it]OE Eval (p=10):  32%|███▏      | 32/100 [00:48<01:48,  1.60s/it]OE Eval (p=10):  34%|███▍      | 34/100 [02:58<14:38, 13.31s/it]                                                                2026-03-26 23:59:21,111 - INFO - Evaluated program df39cd46-f800-4322-a9b5-0004294386a6 in 196.72s: combined_score=0.6400, length=231.0000
+2026-03-26 23:59:21,113 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-26 23:59:21,114 - INFO - New MAP-Elites cell occupied in island 1: {'length': 44}
+2026-03-26 23:59:21,114 - INFO - Iteration 5: Program df39cd46-f800-4322-a9b5-0004294386a6 (parent: 9c13c5c0-cb02-42bd-9cb0-9beed4471b87) completed in 199.52s
+2026-03-26 23:59:21,114 - INFO - Metrics: combined_score=0.6400, length=231.0000
+2026-03-26 23:59:21,114 - INFO - Checkpoint interval reached at iteration 5
+2026-03-26 23:59:21,114 - INFO - Island Status:
+2026-03-26 23:59:21,114 - INFO -    Island 0: 5 programs, best=0.7400, avg=0.6400, diversity=19.08, gen=2 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-26 23:59:21,114 - INFO -  * Island 1: 2 programs, best=0.7400, avg=0.6900, diversity=35.90, gen=2 (best: df39cd46-f800-4322-a9b5-0004294386a6)
+2026-03-26 23:59:21,114 - INFO -    Island 2: 1 programs, best=0.7400, avg=0.7400, diversity=0.00, gen=1
+2026-03-26 23:59:21,115 - INFO - Saved database with 8 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_5
+2026-03-26 23:59:21,115 - INFO - Saved best program at checkpoint 5 with metrics: combined_score=0.7400, length=41.0000
+2026-03-26 23:59:21,115 - INFO - Saved checkpoint at iteration 5 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_5
+[OpenEvolve] Accuracy: 0.640 | Best: 0.750 | Total Calls: 720 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:16,  1.19it/s]OE Eval (p=10):  40%|████      | 8/20 [00:00<00:01, 10.48it/s]OE Eval (p=10):  65%|██████▌   | 13/20 [00:01<00:00, 14.34it/s]OE Eval (p=10):  80%|████████  | 16/20 [00:01<00:00, 14.57it/s]OE Eval (p=10):  95%|█████████▌| 19/20 [00:01<00:00, 14.74it/s]                                                               [OpenEvolve] Accuracy: 0.550 | Best: 0.750 | Total Calls: 740 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<00:55,  1.80it/s]OE Eval (p=10):   2%|▏         | 2/100 [00:14<13:22,  8.19s/it]OE Eval (p=10):   3%|▎         | 3/100 [00:45<30:22, 18.79s/it]OE Eval (p=10):   4%|▍         | 4/100 [02:55<1:40:27, 62.79s/it]OE Eval (p=10):   5%|▌         | 5/100 [02:55<1:03:40, 40.22s/it]                                                                 2026-03-27 00:02:22,463 - INFO - Evaluated program 7532bb9c-45dc-47dc-90fd-a6dac68f1866 in 178.55s: combined_score=0.6400, length=231.0000
+2026-03-27 00:02:22,465 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:02:22,465 - INFO - New MAP-Elites cell occupied in island 2: {'length': 44}
+2026-03-27 00:02:22,465 - INFO - Iteration 6: Program 7532bb9c-45dc-47dc-90fd-a6dac68f1866 (parent: edad713f-67e3-4e0a-a0df-71b71f11e345) completed in 181.35s
+2026-03-27 00:02:22,465 - INFO - Metrics: combined_score=0.6400, length=231.0000
+2026-03-27 00:02:22,465 - INFO - Checkpoint interval reached at iteration 6
+2026-03-27 00:02:22,465 - INFO - Island Status:
+2026-03-27 00:02:22,465 - INFO -    Island 0: 5 programs, best=0.7400, avg=0.6400, diversity=19.08, gen=2 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:02:22,465 - INFO -    Island 1: 2 programs, best=0.7400, avg=0.6900, diversity=35.90, gen=2 (best: df39cd46-f800-4322-a9b5-0004294386a6)
+2026-03-27 00:02:22,465 - INFO -  * Island 2: 2 programs, best=0.7400, avg=0.6900, diversity=35.90, gen=2 (best: 7532bb9c-45dc-47dc-90fd-a6dac68f1866)
+2026-03-27 00:02:22,467 - INFO - Saved database with 9 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_6
+2026-03-27 00:02:22,467 - INFO - Saved best program at checkpoint 6 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:02:22,467 - INFO - Saved checkpoint at iteration 6 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_6
+[OpenEvolve] Accuracy: 0.640 | Best: 0.750 | Total Calls: 840 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:15,  1.23it/s]OE Eval (p=10):  10%|█         | 2/20 [00:00<00:07,  2.38it/s]OE Eval (p=10):  55%|█████▌    | 11/20 [00:01<00:00, 15.61it/s]OE Eval (p=10):  70%|███████   | 14/20 [00:01<00:00,  9.25it/s]                                                               *** NEW BEST SCORE: 0.8000 ***
+[OpenEvolve] Accuracy: 0.800 | Best: 0.800 | Total Calls: 860 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<00:56,  1.76it/s]OE Eval (p=10):   2%|▏         | 2/100 [00:01<00:54,  1.80it/s]OE Eval (p=10):  13%|█▎        | 13/100 [00:01<00:05, 14.81it/s]OE Eval (p=10):  17%|█▋        | 17/100 [00:01<00:06, 13.70it/s]OE Eval (p=10):  20%|██        | 20/100 [00:01<00:05, 15.09it/s]OE Eval (p=10):  23%|██▎       | 23/100 [00:01<00:05, 14.70it/s]OE Eval (p=10):  25%|██▌       | 25/100 [00:02<00:05, 12.51it/s]OE Eval (p=10):  28%|██▊       | 28/100 [00:02<00:05, 14.32it/s]OE Eval (p=10):  31%|███       | 31/100 [00:02<00:04, 16.49it/s]OE Eval (p=10):  34%|███▍      | 34/100 [00:02<00:05, 12.47it/s]OE Eval (p=10):  36%|███▌      | 36/100 [00:02<00:04, 13.21it/s]OE Eval (p=10):  39%|███▉      | 39/100 [00:03<00:03, 15.64it/s]OE Eval (p=10):  43%|████▎     | 43/100 [00:03<00:03, 16.63it/s]OE Eval (p=10):  45%|████▌     | 45/100 [00:03<00:03, 16.67it/s]OE Eval (p=10):  47%|████▋     | 47/100 [00:03<00:04, 12.42it/s]OE Eval (p=10):  50%|█████     | 50/100 [00:03<00:03, 14.51it/s]OE Eval (p=10):  52%|█████▏    | 52/100 [00:04<00:03, 14.53it/s]OE Eval (p=10):  56%|█████▌    | 56/100 [00:04<00:02, 18.31it/s]OE Eval (p=10):  60%|██████    | 60/100 [00:04<00:02, 14.13it/s]OE Eval (p=10):  63%|██████▎   | 63/100 [00:04<00:02, 12.71it/s]OE Eval (p=10):  71%|███████   | 71/100 [00:05<00:01, 18.81it/s]OE Eval (p=10):  74%|███████▍  | 74/100 [00:05<00:01, 15.91it/s]OE Eval (p=10):  76%|███████▌  | 76/100 [00:05<00:01, 15.66it/s]OE Eval (p=10):  78%|███████▊  | 78/100 [00:05<00:01, 15.87it/s]OE Eval (p=10):  81%|████████  | 81/100 [00:05<00:01, 17.22it/s]OE Eval (p=10):  84%|████████▍ | 84/100 [00:06<00:01, 11.83it/s]OE Eval (p=10):  90%|█████████ | 90/100 [00:06<00:00, 16.91it/s]OE Eval (p=10):  93%|█████████▎| 93/100 [00:06<00:00, 16.52it/s]OE Eval (p=10):  95%|█████████▌| 95/100 [00:07<00:00,  8.95it/s]                                                                2026-03-27 00:02:34,543 - INFO - Evaluated program 801b5d05-3fb9-49d1-9751-531cbebd627d in 10.04s: combined_score=0.7200, length=41.0000
+2026-03-27 00:02:34,546 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:02:34,551 - INFO - New MAP-Elites cell occupied in island 0: {'length': 0}
+2026-03-27 00:02:34,551 - INFO - Iteration 7: Program 801b5d05-3fb9-49d1-9751-531cbebd627d (parent: cab13e71-1c05-45ec-b0d5-490bf2bbc498) completed in 12.08s
+2026-03-27 00:02:34,551 - INFO - Metrics: combined_score=0.7200, length=41.0000
+2026-03-27 00:02:34,551 - INFO - Checkpoint interval reached at iteration 7
+2026-03-27 00:02:34,551 - INFO - Island Status:
+2026-03-27 00:02:34,551 - INFO -  * Island 0: 6 programs, best=0.7400, avg=0.6533, diversity=19.12, gen=3 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:02:34,551 - INFO -    Island 1: 2 programs, best=0.7400, avg=0.6900, diversity=35.90, gen=2 (best: df39cd46-f800-4322-a9b5-0004294386a6)
+2026-03-27 00:02:34,551 - INFO -    Island 2: 2 programs, best=0.7400, avg=0.6900, diversity=35.90, gen=2 (best: 7532bb9c-45dc-47dc-90fd-a6dac68f1866)
+2026-03-27 00:02:34,557 - INFO - Saved database with 10 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_7
+2026-03-27 00:02:34,557 - INFO - Saved best program at checkpoint 7 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:02:34,557 - INFO - Saved checkpoint at iteration 7 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_7
+[OpenEvolve] Accuracy: 0.720 | Best: 0.800 | Total Calls: 960 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:14,  1.36it/s]OE Eval (p=10):  10%|█         | 2/20 [00:01<00:09,  1.99it/s]OE Eval (p=10):  60%|██████    | 12/20 [00:01<00:00, 13.74it/s]OE Eval (p=10):  75%|███████▌  | 15/20 [00:01<00:00,  9.68it/s]                                                               [OpenEvolve] Accuracy: 0.800 | Best: 0.800 | Total Calls: 980 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<00:53,  1.84it/s]OE Eval (p=10):   2%|▏         | 2/100 [00:01<00:49,  1.99it/s]OE Eval (p=10):  12%|█▏        | 12/100 [00:01<00:08, 10.56it/s]OE Eval (p=10):  16%|█▌        | 16/100 [00:01<00:06, 13.42it/s]OE Eval (p=10):  18%|█▊        | 18/100 [00:01<00:06, 13.10it/s]OE Eval (p=10):  22%|██▏       | 22/100 [00:02<00:06, 12.92it/s]OE Eval (p=10):  25%|██▌       | 25/100 [00:02<00:05, 12.60it/s]OE Eval (p=10):  27%|██▋       | 27/100 [00:02<00:05, 13.33it/s]OE Eval (p=10):  33%|███▎      | 33/100 [00:02<00:04, 15.45it/s]OE Eval (p=10):  36%|███▌      | 36/100 [00:03<00:05, 10.98it/s]OE Eval (p=10):  44%|████▍     | 44/100 [00:03<00:03, 15.17it/s]OE Eval (p=10):  46%|████▌     | 46/100 [00:03<00:03, 14.71it/s]OE Eval (p=10):  48%|████▊     | 48/100 [00:04<00:04, 12.96it/s]OE Eval (p=10):  50%|█████     | 50/100 [00:04<00:04, 11.08it/s]OE Eval (p=10):  55%|█████▌    | 55/100 [00:04<00:03, 14.80it/s]OE Eval (p=10):  58%|█████▊    | 58/100 [00:04<00:03, 14.00it/s]OE Eval (p=10):  60%|██████    | 60/100 [00:04<00:03, 13.31it/s]OE Eval (p=10):  65%|██████▌   | 65/100 [00:05<00:01, 19.14it/s]OE Eval (p=10):  69%|██████▉   | 69/100 [00:05<00:01, 15.89it/s]OE Eval (p=10):  72%|███████▏  | 72/100 [00:05<00:01, 17.52it/s]OE Eval (p=10):  77%|███████▋  | 77/100 [00:05<00:01, 15.20it/s]OE Eval (p=10):  81%|████████  | 81/100 [00:06<00:01, 13.10it/s]OE Eval (p=10):  88%|████████▊ | 88/100 [00:06<00:00, 15.50it/s]OE Eval (p=10):  92%|█████████▏| 92/100 [00:06<00:00, 18.02it/s]OE Eval (p=10):  95%|█████████▌| 95/100 [00:06<00:00, 19.23it/s]OE Eval (p=10):  98%|█████████▊| 98/100 [00:07<00:00, 18.02it/s]                                                                2026-03-27 00:02:45,494 - INFO - Evaluated program 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb in 10.20s: combined_score=0.7300, length=41.0000
+2026-03-27 00:02:45,496 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:02:45,502 - INFO - New MAP-Elites cell occupied in island 1: {'length': 0}
+2026-03-27 00:02:45,502 - INFO - Iteration 8: Program 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb (parent: df39cd46-f800-4322-a9b5-0004294386a6) completed in 10.95s
+2026-03-27 00:02:45,502 - INFO - Metrics: combined_score=0.7300, length=41.0000
+2026-03-27 00:02:45,502 - INFO - Checkpoint interval reached at iteration 8
+2026-03-27 00:02:45,502 - INFO - Island Status:
+2026-03-27 00:02:45,502 - INFO -    Island 0: 6 programs, best=0.7400, avg=0.6533, diversity=19.12, gen=3 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:02:45,502 - INFO -  * Island 1: 3 programs, best=0.7400, avg=0.7033, diversity=24.00, gen=3 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:02:45,502 - INFO -    Island 2: 2 programs, best=0.7400, avg=0.6900, diversity=35.90, gen=2 (best: 7532bb9c-45dc-47dc-90fd-a6dac68f1866)
+2026-03-27 00:02:45,504 - INFO - Saved database with 11 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_8
+2026-03-27 00:02:45,504 - INFO - Saved best program at checkpoint 8 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:02:45,504 - INFO - Saved checkpoint at iteration 8 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_8
+[OpenEvolve] Accuracy: 0.730 | Best: 0.800 | Total Calls: 1080 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:12,  1.48it/s]OE Eval (p=10):  10%|█         | 2/20 [00:00<00:06,  2.88it/s]OE Eval (p=10):  40%|████      | 8/20 [00:00<00:00, 13.05it/s]OE Eval (p=10):  60%|██████    | 12/20 [00:01<00:00, 13.33it/s]OE Eval (p=10):  70%|███████   | 14/20 [00:01<00:00,  8.75it/s]OE Eval (p=10):  80%|████████  | 16/20 [00:16<00:07,  1.92s/it]OE Eval (p=10):  90%|█████████ | 18/20 [00:16<00:02,  1.46s/it]                                                               [OpenEvolve] Accuracy: 0.800 | Best: 0.800 | Total Calls: 1100 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<01:13,  1.36it/s]OE Eval (p=10):   3%|▎         | 3/100 [00:00<00:25,  3.74it/s]OE Eval (p=10):   8%|▊         | 8/100 [00:01<00:09, 10.05it/s]OE Eval (p=10):  11%|█         | 11/100 [00:01<00:08, 10.50it/s]OE Eval (p=10):  16%|█▌        | 16/100 [00:03<00:18,  4.65it/s]OE Eval (p=10):  21%|██        | 21/100 [00:03<00:11,  6.94it/s]OE Eval (p=10):  24%|██▍       | 24/100 [00:03<00:10,  7.46it/s]OE Eval (p=10):  26%|██▌       | 26/100 [00:03<00:08,  8.49it/s]OE Eval (p=10):  32%|███▏      | 32/100 [00:03<00:05, 13.01it/s]OE Eval (p=10):  35%|███▌      | 35/100 [00:04<00:05, 12.17it/s]OE Eval (p=10):  37%|███▋      | 37/100 [00:17<01:26,  1.37s/it]OE Eval (p=10):  38%|███▊      | 38/100 [00:18<01:20,  1.30s/it]OE Eval (p=10):  40%|████      | 40/100 [00:20<01:09,  1.15s/it]OE Eval (p=10):  42%|████▏     | 42/100 [00:21<00:58,  1.00s/it]OE Eval (p=10):  43%|████▎     | 43/100 [00:50<05:17,  5.58s/it]                                                                2026-03-27 00:04:01,390 - INFO - Evaluated program 3de60efd-6dc6-420b-9759-daff7133c38b in 68.41s: combined_score=0.7200, length=149.0000
+2026-03-27 00:04:01,392 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:04:01,399 - INFO - New MAP-Elites cell occupied in island 2: {'length': 25}
+2026-03-27 00:04:01,400 - INFO - Iteration 9: Program 3de60efd-6dc6-420b-9759-daff7133c38b (parent: edad713f-67e3-4e0a-a0df-71b71f11e345) completed in 75.90s
+2026-03-27 00:04:01,400 - INFO - Metrics: combined_score=0.7200, length=149.0000
+2026-03-27 00:04:01,400 - INFO - Checkpoint interval reached at iteration 9
+2026-03-27 00:04:01,400 - INFO - Island Status:
+2026-03-27 00:04:01,400 - INFO -    Island 0: 6 programs, best=0.7400, avg=0.6533, diversity=19.12, gen=3 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:04:01,400 - INFO -    Island 1: 3 programs, best=0.7400, avg=0.7033, diversity=24.00, gen=3 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:04:01,400 - INFO -  * Island 2: 3 programs, best=0.7400, avg=0.7000, diversity=23.93, gen=3 (best: 3de60efd-6dc6-420b-9759-daff7133c38b)
+2026-03-27 00:04:01,401 - INFO - Saved database with 12 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_9
+2026-03-27 00:04:01,401 - INFO - Saved best program at checkpoint 9 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:04:01,401 - INFO - Saved checkpoint at iteration 9 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_9
+[OpenEvolve] Accuracy: 0.720 | Best: 0.800 | Total Calls: 1200 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:07,  2.55it/s]OE Eval (p=10):  10%|█         | 2/20 [00:00<00:04,  4.24it/s]OE Eval (p=10):  15%|█▌        | 3/20 [00:00<00:03,  5.13it/s]OE Eval (p=10):  20%|██        | 4/20 [00:00<00:02,  5.51it/s]OE Eval (p=10):  55%|█████▌    | 11/20 [00:01<00:00, 13.56it/s]OE Eval (p=10):  65%|██████▌   | 13/20 [00:01<00:00, 11.34it/s]OE Eval (p=10):  75%|███████▌  | 15/20 [00:16<00:10,  2.01s/it]                                                               [OpenEvolve] Accuracy: 0.650 | Best: 0.800 | Total Calls: 1220 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<00:45,  2.19it/s]OE Eval (p=10):   3%|▎         | 3/100 [00:00<00:19,  4.92it/s]OE Eval (p=10):  11%|█         | 11/100 [00:01<00:08, 11.08it/s]OE Eval (p=10):  13%|█▎        | 13/100 [00:01<00:07, 12.01it/s]OE Eval (p=10):  17%|█▋        | 17/100 [00:45<06:00,  4.34s/it]OE Eval (p=10):  25%|██▌       | 25/100 [00:45<02:37,  2.10s/it]OE Eval (p=10):  52%|█████▏    | 52/100 [00:51<00:34,  1.38it/s]OE Eval (p=10):  69%|██████▉   | 69/100 [01:01<00:21,  1.47it/s]OE Eval (p=10):  71%|███████   | 71/100 [01:01<00:18,  1.54it/s]                                                                2026-03-27 00:05:22,643 - INFO - Evaluated program c145320d-cb40-472f-b7c4-53da04c81ac5 in 79.26s: combined_score=0.6500, length=286.0000
+2026-03-27 00:05:22,645 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:05:22,653 - INFO - Island 0 MAP-Elites cell improved: {'length': 49} (fitness: 0.640 -> 0.650)
+2026-03-27 00:05:22,653 - INFO - Iteration 10: Program c145320d-cb40-472f-b7c4-53da04c81ac5 (parent: 82100c17-8d2b-4d65-b5d0-7e6bbc08a22a) completed in 81.25s
+2026-03-27 00:05:22,653 - INFO - Metrics: combined_score=0.6500, length=286.0000
+2026-03-27 00:05:22,653 - INFO - Checkpoint interval reached at iteration 10
+2026-03-27 00:05:22,653 - INFO - Island Status:
+2026-03-27 00:05:22,653 - INFO -  * Island 0: 6 programs, best=0.7400, avg=0.6550, diversity=19.12, gen=4 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:05:22,653 - INFO -    Island 1: 3 programs, best=0.7400, avg=0.7033, diversity=24.00, gen=3 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:05:22,653 - INFO -    Island 2: 3 programs, best=0.7400, avg=0.7000, diversity=23.93, gen=3 (best: 3de60efd-6dc6-420b-9759-daff7133c38b)
+2026-03-27 00:05:22,654 - INFO - Saved database with 13 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_10
+2026-03-27 00:05:22,654 - INFO - Saved best program at checkpoint 10 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:05:22,654 - INFO - Saved checkpoint at iteration 10 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_10
+[OpenEvolve] Accuracy: 0.650 | Best: 0.800 | Total Calls: 1320 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:13,  1.42it/s]OE Eval (p=10):  45%|████▌     | 9/20 [00:00<00:00, 13.79it/s]OE Eval (p=10):  65%|██████▌   | 13/20 [00:01<00:00,  9.48it/s]OE Eval (p=10):  80%|████████  | 16/20 [00:01<00:00, 10.56it/s]                                                               [OpenEvolve] Accuracy: 0.700 | Best: 0.800 | Total Calls: 1340 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<01:00,  1.64it/s]OE Eval (p=10):   2%|▏         | 2/100 [00:08<07:47,  4.77s/it]OE Eval (p=10):   3%|▎         | 3/100 [02:53<2:06:18, 78.13s/it]OE Eval (p=10):   7%|▋         | 7/100 [02:55<33:57, 21.90s/it]                                                                 2026-03-27 00:08:24,589 - INFO - Evaluated program 81585505-31ba-4673-8f8f-01385332ee44 in 177.87s: combined_score=0.7000, length=191.0000
+2026-03-27 00:08:24,591 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:08:24,600 - INFO - New MAP-Elites cell occupied in island 1: {'length': 30}
+2026-03-27 00:08:24,600 - INFO - Iteration 11: Program 81585505-31ba-4673-8f8f-01385332ee44 (parent: df39cd46-f800-4322-a9b5-0004294386a6) completed in 181.95s
+2026-03-27 00:08:24,600 - INFO - Metrics: combined_score=0.7000, length=191.0000
+2026-03-27 00:08:24,600 - INFO - Checkpoint interval reached at iteration 11
+2026-03-27 00:08:24,600 - INFO - Island Status:
+2026-03-27 00:08:24,600 - INFO -    Island 0: 6 programs, best=0.7400, avg=0.6550, diversity=19.12, gen=4 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:08:24,600 - INFO -  * Island 1: 4 programs, best=0.7400, avg=0.7025, diversity=21.65, gen=4 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:08:24,600 - INFO -    Island 2: 3 programs, best=0.7400, avg=0.7000, diversity=23.93, gen=3 (best: 3de60efd-6dc6-420b-9759-daff7133c38b)
+2026-03-27 00:08:24,602 - INFO - Saved database with 14 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_11
+2026-03-27 00:08:24,602 - INFO - Saved best program at checkpoint 11 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:08:24,602 - INFO - Saved checkpoint at iteration 11 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_11
+[OpenEvolve] Accuracy: 0.700 | Best: 0.800 | Total Calls: 1440 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:09,  1.91it/s]OE Eval (p=10):  10%|█         | 2/20 [00:00<00:05,  3.42it/s]OE Eval (p=10):  25%|██▌       | 5/20 [00:00<00:01,  9.16it/s]OE Eval (p=10):  60%|██████    | 12/20 [00:00<00:00, 18.76it/s]OE Eval (p=10):  75%|███████▌  | 15/20 [00:01<00:00, 16.07it/s]OE Eval (p=10):  95%|█████████▌| 19/20 [00:01<00:00, 19.07it/s]                                                               [OpenEvolve] Accuracy: 0.600 | Best: 0.800 | Total Calls: 1460 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<01:24,  1.18it/s]OE Eval (p=10):   4%|▍         | 4/100 [00:45<19:27, 12.16s/it]OE Eval (p=10):  48%|████▊     | 48/100 [00:55<00:46,  1.13it/s]OE Eval (p=10):  75%|███████▌  | 75/100 [01:05<00:16,  1.53it/s]                                                                2026-03-27 00:09:33,895 - INFO - Evaluated program c2d4df9a-e33e-474b-bfff-45c9e1e78c04 in 67.63s: combined_score=0.6300, length=71.0000
+2026-03-27 00:09:33,897 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:09:33,904 - INFO - New MAP-Elites cell occupied in island 2: {'length': 6}
+2026-03-27 00:09:33,905 - INFO - Iteration 12: Program c2d4df9a-e33e-474b-bfff-45c9e1e78c04 (parent: 7532bb9c-45dc-47dc-90fd-a6dac68f1866) completed in 69.31s
+2026-03-27 00:09:33,905 - INFO - Metrics: combined_score=0.6300, length=71.0000
+2026-03-27 00:09:33,905 - INFO - Checkpoint interval reached at iteration 12
+2026-03-27 00:09:33,905 - INFO - Island Status:
+2026-03-27 00:09:33,905 - INFO -    Island 0: 6 programs, best=0.7400, avg=0.6550, diversity=19.12, gen=4 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:09:33,905 - INFO -    Island 1: 4 programs, best=0.7400, avg=0.7025, diversity=21.65, gen=4 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:09:33,905 - INFO -  * Island 2: 4 programs, best=0.7400, avg=0.6825, diversity=19.67, gen=4 (best: 3de60efd-6dc6-420b-9759-daff7133c38b)
+2026-03-27 00:09:33,908 - INFO - Saved database with 15 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_12
+2026-03-27 00:09:33,908 - INFO - Saved best program at checkpoint 12 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:09:33,908 - INFO - Saved checkpoint at iteration 12 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_12
+[OpenEvolve] Accuracy: 0.630 | Best: 0.800 | Total Calls: 1560 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:10,  1.76it/s]OE Eval (p=10):  10%|█         | 2/20 [00:00<00:06,  2.91it/s]OE Eval (p=10):  20%|██        | 4/20 [00:00<00:02,  6.22it/s]OE Eval (p=10):  55%|█████▌    | 11/20 [00:01<00:00, 13.00it/s]OE Eval (p=10):  65%|██████▌   | 13/20 [00:01<00:00, 12.54it/s]OE Eval (p=10): 100%|██████████| 20/20 [00:01<00:00, 16.96it/s]                                                               [OpenEvolve] Accuracy: 0.550 | Best: 0.800 | Total Calls: 1580 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:42<1:10:09, 42.52s/it]OE Eval (p=10):   5%|▌         | 5/100 [02:54<54:36, 34.49s/it]                                                                 2026-03-27 00:12:35,139 - INFO - Evaluated program 97cf0ec2-e7d8-48e3-a06d-4eaa2e31bbaa in 177.53s: combined_score=0.6400, length=268.0000
+2026-03-27 00:12:35,141 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:12:35,144 - INFO - New MAP-Elites cell occupied in island 0: {'length': 46}
+2026-03-27 00:12:35,144 - INFO - Performing migration at iteration 13
+2026-03-27 00:12:35,144 - INFO - Performing migration between islands
+2026-03-27 00:12:35,145 - INFO - Migration completed at generation 5
+2026-03-27 00:12:35,145 - INFO - Island Status:
+2026-03-27 00:12:35,145 - INFO -  * Island 0: 7 programs, best=0.7400, avg=0.6529, diversity=20.15, gen=5 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:12:35,145 - INFO -    Island 1: 4 programs, best=0.7400, avg=0.7025, diversity=21.65, gen=4 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:12:35,145 - INFO -    Island 2: 4 programs, best=0.7400, avg=0.6825, diversity=19.67, gen=4 (best: 3de60efd-6dc6-420b-9759-daff7133c38b)
+2026-03-27 00:12:35,145 - INFO - Iteration 13: Program 97cf0ec2-e7d8-48e3-a06d-4eaa2e31bbaa (parent: 801b5d05-3fb9-49d1-9751-531cbebd627d) completed in 181.24s
+2026-03-27 00:12:35,145 - INFO - Metrics: combined_score=0.6400, length=268.0000
+2026-03-27 00:12:35,145 - INFO - Checkpoint interval reached at iteration 13
+2026-03-27 00:12:35,145 - INFO - Island Status:
+2026-03-27 00:12:35,145 - INFO -  * Island 0: 7 programs, best=0.7400, avg=0.6529, diversity=20.15, gen=5 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:12:35,145 - INFO -    Island 1: 4 programs, best=0.7400, avg=0.7025, diversity=21.65, gen=4 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:12:35,145 - INFO -    Island 2: 4 programs, best=0.7400, avg=0.6825, diversity=19.67, gen=4 (best: 3de60efd-6dc6-420b-9759-daff7133c38b)
+2026-03-27 00:12:35,147 - INFO - Saved database with 16 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_13
+2026-03-27 00:12:35,147 - INFO - Saved best program at checkpoint 13 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:12:35,147 - INFO - Saved checkpoint at iteration 13 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_13
+[OpenEvolve] Accuracy: 0.640 | Best: 0.800 | Total Calls: 1680 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:14,  1.29it/s]OE Eval (p=10):  10%|█         | 2/20 [00:00<00:07,  2.40it/s]OE Eval (p=10):  35%|███▌      | 7/20 [00:01<00:01, 10.02it/s]OE Eval (p=10):  65%|██████▌   | 13/20 [00:01<00:00, 17.61it/s]OE Eval (p=10):  80%|████████  | 16/20 [00:01<00:00,  9.94it/s]                                                               [OpenEvolve] Accuracy: 0.800 | Best: 0.800 | Total Calls: 1700 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<01:36,  1.03it/s]OE Eval (p=10):   8%|▊         | 8/100 [00:01<00:09,  9.75it/s]OE Eval (p=10):  12%|█▏        | 12/100 [00:01<00:07, 12.55it/s]OE Eval (p=10):  16%|█▌        | 16/100 [00:01<00:06, 12.11it/s]OE Eval (p=10):  19%|█▉        | 19/100 [00:01<00:06, 11.64it/s]OE Eval (p=10):  22%|██▏       | 22/100 [00:02<00:08,  9.60it/s]OE Eval (p=10):  24%|██▍       | 24/100 [00:02<00:07,  9.71it/s]OE Eval (p=10):  32%|███▏      | 32/100 [00:02<00:04, 13.76it/s]OE Eval (p=10):  36%|███▌      | 36/100 [00:03<00:05, 11.97it/s]OE Eval (p=10):  43%|████▎     | 43/100 [00:03<00:03, 17.12it/s]OE Eval (p=10):  48%|████▊     | 48/100 [00:04<00:03, 14.49it/s]OE Eval (p=10):  50%|█████     | 50/100 [00:04<00:03, 13.96it/s]OE Eval (p=10):  53%|█████▎    | 53/100 [00:04<00:05,  8.67it/s]OE Eval (p=10):  68%|██████▊   | 68/100 [00:05<00:01, 16.73it/s]OE Eval (p=10):  71%|███████   | 71/100 [00:05<00:01, 14.90it/s]OE Eval (p=10):  76%|███████▌  | 76/100 [00:05<00:01, 16.26it/s]OE Eval (p=10):  78%|███████▊  | 78/100 [00:06<00:01, 15.91it/s]OE Eval (p=10):  80%|████████  | 80/100 [00:06<00:01, 12.78it/s]OE Eval (p=10):  85%|████████▌ | 85/100 [00:06<00:01, 12.74it/s]OE Eval (p=10):  92%|█████████▏| 92/100 [00:07<00:00, 14.67it/s]OE Eval (p=10):  94%|█████████▍| 94/100 [00:07<00:00, 12.56it/s]OE Eval (p=10):  97%|█████████▋| 97/100 [00:07<00:00, 14.26it/s]OE Eval (p=10):  99%|█████████▉| 99/100 [00:07<00:00, 12.46it/s]                                                                2026-03-27 00:12:46,810 - INFO - Evaluated program 109ea8f0-9a84-4a87-a145-68d97fce8172 in 10.82s: combined_score=0.7300, length=41.0000
+2026-03-27 00:12:46,812 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:12:46,816 - INFO - Iteration 14: Program 109ea8f0-9a84-4a87-a145-68d97fce8172 (parent: df39cd46-f800-4322-a9b5-0004294386a6) completed in 11.67s
+2026-03-27 00:12:46,816 - INFO - Metrics: combined_score=0.7300, length=41.0000
+2026-03-27 00:12:46,816 - INFO - Checkpoint interval reached at iteration 14
+2026-03-27 00:12:46,816 - INFO - Island Status:
+2026-03-27 00:12:46,816 - INFO -    Island 0: 7 programs, best=0.7400, avg=0.6529, diversity=20.15, gen=5 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:12:46,816 - INFO -  * Island 1: 5 programs, best=0.7400, avg=0.7080, diversity=14.78, gen=5 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:12:46,816 - INFO -    Island 2: 4 programs, best=0.7400, avg=0.6825, diversity=19.67, gen=4 (best: 3de60efd-6dc6-420b-9759-daff7133c38b)
+2026-03-27 00:12:46,819 - INFO - Saved database with 17 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_14
+2026-03-27 00:12:46,819 - INFO - Saved best program at checkpoint 14 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:12:46,819 - INFO - Saved checkpoint at iteration 14 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_14
+[OpenEvolve] Accuracy: 0.730 | Best: 0.800 | Total Calls: 1800 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:10,  1.86it/s]OE Eval (p=10):  10%|█         | 2/20 [00:03<00:32,  1.80s/it]                                                              [OpenEvolve] Accuracy: 0.800 | Best: 0.800 | Total Calls: 1820 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<01:21,  1.21it/s]OE Eval (p=10):   2%|▏         | 2/100 [00:01<00:45,  2.15it/s]OE Eval (p=10):  10%|█         | 10/100 [00:01<00:09,  9.61it/s]OE Eval (p=10):  13%|█▎        | 13/100 [00:01<00:07, 12.13it/s]OE Eval (p=10):  15%|█▌        | 15/100 [00:02<00:10,  8.32it/s]OE Eval (p=10):  17%|█▋        | 17/100 [00:02<00:14,  5.59it/s]OE Eval (p=10):  31%|███       | 31/100 [00:02<00:04, 16.02it/s]OE Eval (p=10):  34%|███▍      | 34/100 [00:03<00:04, 14.53it/s]OE Eval (p=10):  37%|███▋      | 37/100 [00:03<00:04, 13.34it/s]OE Eval (p=10):  41%|████      | 41/100 [00:03<00:04, 13.66it/s]OE Eval (p=10):  44%|████▍     | 44/100 [00:04<00:03, 14.06it/s]OE Eval (p=10):  47%|████▋     | 47/100 [00:04<00:03, 14.99it/s]OE Eval (p=10):  49%|████▉     | 49/100 [00:04<00:03, 13.42it/s]OE Eval (p=10):  52%|█████▏    | 52/100 [00:04<00:03, 14.47it/s]OE Eval (p=10):  55%|█████▌    | 55/100 [00:04<00:03, 11.64it/s]OE Eval (p=10):  61%|██████    | 61/100 [00:05<00:02, 18.27it/s]OE Eval (p=10):  64%|██████▍   | 64/100 [00:05<00:02, 13.05it/s]OE Eval (p=10):  68%|██████▊   | 68/100 [00:05<00:01, 16.61it/s]OE Eval (p=10):  71%|███████   | 71/100 [00:05<00:02, 13.04it/s]OE Eval (p=10):  74%|███████▍  | 74/100 [00:06<00:01, 13.32it/s]OE Eval (p=10):  81%|████████  | 81/100 [00:06<00:01, 13.57it/s]OE Eval (p=10):  83%|████████▎ | 83/100 [00:07<00:01, 10.01it/s]OE Eval (p=10):  93%|█████████▎| 93/100 [00:07<00:00, 16.84it/s]OE Eval (p=10):  96%|█████████▌| 96/100 [00:07<00:00, 14.55it/s]OE Eval (p=10): 100%|██████████| 100/100 [00:08<00:00, 10.90it/s]                                                                 2026-03-27 00:13:00,907 - INFO - Evaluated program 810f2c99-8616-404d-8e35-2c626fae394f in 12.52s: combined_score=0.7200, length=41.0000
+2026-03-27 00:13:00,908 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:13:00,917 - INFO - New MAP-Elites cell occupied in island 2: {'length': 0}
+2026-03-27 00:13:00,917 - INFO - Iteration 15: Program 810f2c99-8616-404d-8e35-2c626fae394f (parent: c2d4df9a-e33e-474b-bfff-45c9e1e78c04) completed in 14.10s
+2026-03-27 00:13:00,917 - INFO - Metrics: combined_score=0.7200, length=41.0000
+2026-03-27 00:13:00,917 - INFO - Checkpoint interval reached at iteration 15
+2026-03-27 00:13:00,917 - INFO - Island Status:
+2026-03-27 00:13:00,917 - INFO -    Island 0: 7 programs, best=0.7400, avg=0.6529, diversity=20.15, gen=5 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:13:00,917 - INFO -    Island 1: 5 programs, best=0.7400, avg=0.7080, diversity=14.78, gen=5 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:13:00,917 - INFO -  * Island 2: 5 programs, best=0.7400, avg=0.6900, diversity=17.58, gen=5 (best: 3de60efd-6dc6-420b-9759-daff7133c38b)
+2026-03-27 00:13:00,920 - INFO - Saved database with 18 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_15
+2026-03-27 00:13:00,920 - INFO - Saved best program at checkpoint 15 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:13:00,920 - INFO - Saved checkpoint at iteration 15 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_15
+[OpenEvolve] Accuracy: 0.720 | Best: 0.800 | Total Calls: 1920 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:12,  1.58it/s]OE Eval (p=10):  25%|██▌       | 5/20 [00:00<00:02,  6.19it/s]OE Eval (p=10):  60%|██████    | 12/20 [00:01<00:00, 12.19it/s]OE Eval (p=10):  85%|████████▌ | 17/20 [00:01<00:00, 13.29it/s]                                                               [OpenEvolve] Accuracy: 0.600 | Best: 0.800 | Total Calls: 1940 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:43<1:12:16, 43.81s/it]OE Eval (p=10):   2%|▏         | 2/100 [00:44<29:42, 18.19s/it]  OE Eval (p=10):   8%|▊         | 8/100 [02:56<32:47, 21.39s/it]                                                               2026-03-27 00:16:02,986 - INFO - Evaluated program cd4f9f03-9cdc-4541-82d9-c8dbf6b1ee1b in 178.82s: combined_score=0.6200, length=274.0000
+2026-03-27 00:16:02,988 - INFO - New MAP-Elites cell occupied in island 0: {'length': 47}
+2026-03-27 00:16:02,988 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:16:02,988 - INFO - Island 0 MAP-Elites coverage reached 10.0% (5/50 cells)
+2026-03-27 00:16:02,988 - INFO - Iteration 16: Program cd4f9f03-9cdc-4541-82d9-c8dbf6b1ee1b (parent: 801b5d05-3fb9-49d1-9751-531cbebd627d) completed in 182.08s
+2026-03-27 00:16:02,988 - INFO - Metrics: combined_score=0.6200, length=274.0000
+2026-03-27 00:16:02,988 - INFO - Checkpoint interval reached at iteration 16
+2026-03-27 00:16:02,989 - INFO - Island Status:
+2026-03-27 00:16:02,989 - INFO -  * Island 0: 8 programs, best=0.7400, avg=0.6488, diversity=20.15, gen=6 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:16:02,989 - INFO -    Island 1: 5 programs, best=0.7400, avg=0.7080, diversity=14.78, gen=5 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:16:02,989 - INFO -    Island 2: 5 programs, best=0.7400, avg=0.6900, diversity=17.58, gen=5 (best: 3de60efd-6dc6-420b-9759-daff7133c38b)
+2026-03-27 00:16:02,990 - INFO - Saved database with 19 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_16
+2026-03-27 00:16:02,991 - INFO - Saved best program at checkpoint 16 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:16:02,991 - INFO - Saved checkpoint at iteration 16 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_16
+[OpenEvolve] Accuracy: 0.620 | Best: 0.800 | Total Calls: 2040 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:16,  1.14it/s]OE Eval (p=10):  10%|█         | 2/20 [00:01<00:08,  2.06it/s]OE Eval (p=10):  60%|██████    | 12/20 [00:01<00:00, 14.68it/s]OE Eval (p=10):  75%|███████▌  | 15/20 [00:01<00:00, 16.01it/s]OE Eval (p=10):  90%|█████████ | 18/20 [00:01<00:00, 16.73it/s]                                                               [OpenEvolve] Accuracy: 0.800 | Best: 0.800 | Total Calls: 2060 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<01:07,  1.47it/s]OE Eval (p=10):   2%|▏         | 2/100 [00:01<00:52,  1.87it/s]OE Eval (p=10):  13%|█▎        | 13/100 [00:01<00:05, 16.01it/s]OE Eval (p=10):  18%|█▊        | 18/100 [00:01<00:06, 13.29it/s]OE Eval (p=10):  21%|██        | 21/100 [00:01<00:05, 14.39it/s]OE Eval (p=10):  24%|██▍       | 24/100 [00:02<00:08,  9.03it/s]OE Eval (p=10):  33%|███▎      | 33/100 [00:02<00:05, 13.13it/s]OE Eval (p=10):  35%|███▌      | 35/100 [00:03<00:04, 13.30it/s]OE Eval (p=10):  39%|███▉      | 39/100 [00:03<00:03, 16.02it/s]OE Eval (p=10):  43%|████▎     | 43/100 [00:03<00:03, 15.27it/s]OE Eval (p=10):  45%|████▌     | 45/100 [00:03<00:04, 11.10it/s]OE Eval (p=10):  52%|█████▏    | 52/100 [00:04<00:03, 15.72it/s]OE Eval (p=10):  54%|█████▍    | 54/100 [00:04<00:02, 15.48it/s]OE Eval (p=10):  56%|█████▌    | 56/100 [00:04<00:03, 13.42it/s]OE Eval (p=10):  58%|█████▊    | 58/100 [00:04<00:03, 12.53it/s]OE Eval (p=10):  60%|██████    | 60/100 [00:05<00:04,  9.72it/s]OE Eval (p=10):  67%|██████▋   | 67/100 [00:05<00:02, 11.24it/s]OE Eval (p=10):  73%|███████▎  | 73/100 [00:05<00:01, 16.09it/s]OE Eval (p=10):  78%|███████▊  | 78/100 [00:06<00:01, 17.06it/s]OE Eval (p=10):  81%|████████  | 81/100 [00:06<00:01, 15.29it/s]OE Eval (p=10):  85%|████████▌ | 85/100 [00:06<00:01, 11.49it/s]OE Eval (p=10):  91%|█████████ | 91/100 [00:06<00:00, 16.19it/s]OE Eval (p=10):  94%|█████████▍| 94/100 [00:07<00:00, 14.60it/s]OE Eval (p=10):  97%|█████████▋| 97/100 [00:07<00:00, 13.18it/s]OE Eval (p=10): 100%|██████████| 100/100 [00:07<00:00, 11.74it/s]                                                                 2026-03-27 00:16:15,793 - INFO - Evaluated program be28d1dd-8273-4a8c-b796-c3e1de40d456 in 10.74s: combined_score=0.7300, length=41.0000
+2026-03-27 00:16:15,795 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:16:15,797 - INFO - Iteration 17: Program be28d1dd-8273-4a8c-b796-c3e1de40d456 (parent: 81585505-31ba-4673-8f8f-01385332ee44) completed in 12.81s
+2026-03-27 00:16:15,797 - INFO - Metrics: combined_score=0.7300, length=41.0000
+2026-03-27 00:16:15,797 - INFO - Checkpoint interval reached at iteration 17
+2026-03-27 00:16:15,797 - INFO - Island Status:
+2026-03-27 00:16:15,797 - INFO -    Island 0: 8 programs, best=0.7400, avg=0.6488, diversity=20.15, gen=6 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:16:15,797 - INFO -  * Island 1: 6 programs, best=0.7400, avg=0.7117, diversity=10.53, gen=6 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:16:15,797 - INFO -    Island 2: 5 programs, best=0.7400, avg=0.6900, diversity=17.58, gen=5 (best: 3de60efd-6dc6-420b-9759-daff7133c38b)
+2026-03-27 00:16:15,799 - INFO - Saved database with 20 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_17
+2026-03-27 00:16:15,799 - INFO - Saved best program at checkpoint 17 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:16:15,799 - INFO - Saved checkpoint at iteration 17 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_17
+[OpenEvolve] Accuracy: 0.730 | Best: 0.800 | Total Calls: 2160 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:11,  1.61it/s]OE Eval (p=10):  10%|█         | 2/20 [00:00<00:07,  2.46it/s]OE Eval (p=10):  55%|█████▌    | 11/20 [00:01<00:00, 13.45it/s]OE Eval (p=10):  65%|██████▌   | 13/20 [00:01<00:00, 13.16it/s]OE Eval (p=10):  75%|███████▌  | 15/20 [00:01<00:00, 13.16it/s]OE Eval (p=10):  85%|████████▌ | 17/20 [00:01<00:00,  9.09it/s]                                                               [OpenEvolve] Accuracy: 0.800 | Best: 0.800 | Total Calls: 2180 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<00:48,  2.05it/s]OE Eval (p=10):   2%|▏         | 2/100 [00:01<00:57,  1.71it/s]OE Eval (p=10):  11%|█         | 11/100 [00:01<00:07, 12.56it/s]OE Eval (p=10):  15%|█▌        | 15/100 [00:01<00:05, 14.75it/s]OE Eval (p=10):  19%|█▉        | 19/100 [00:01<00:04, 18.44it/s]OE Eval (p=10):  23%|██▎       | 23/100 [00:02<00:07, 10.83it/s]OE Eval (p=10):  26%|██▌       | 26/100 [00:02<00:07, 10.46it/s]OE Eval (p=10):  30%|███       | 30/100 [00:02<00:05, 12.99it/s]OE Eval (p=10):  35%|███▌      | 35/100 [00:02<00:03, 16.77it/s]OE Eval (p=10):  38%|███▊      | 38/100 [00:03<00:04, 14.30it/s]OE Eval (p=10):  41%|████      | 41/100 [00:03<00:04, 13.54it/s]OE Eval (p=10):  44%|████▍     | 44/100 [00:03<00:04, 12.69it/s]OE Eval (p=10):  49%|████▉     | 49/100 [00:03<00:03, 15.62it/s]OE Eval (p=10):  51%|█████     | 51/100 [00:04<00:05,  9.15it/s]OE Eval (p=10):  59%|█████▉    | 59/100 [00:04<00:03, 13.55it/s]OE Eval (p=10):  65%|██████▌   | 65/100 [00:05<00:02, 16.82it/s]OE Eval (p=10):  68%|██████▊   | 68/100 [00:05<00:02, 12.17it/s]OE Eval (p=10):  72%|███████▏  | 72/100 [00:05<00:01, 14.78it/s]OE Eval (p=10):  76%|███████▌  | 76/100 [00:05<00:01, 17.31it/s]OE Eval (p=10):  79%|███████▉  | 79/100 [00:06<00:01, 14.72it/s]OE Eval (p=10):  82%|████████▏ | 82/100 [00:06<00:01, 12.38it/s]OE Eval (p=10):  85%|████████▌ | 85/100 [00:06<00:01, 11.67it/s]OE Eval (p=10):  89%|████████▉ | 89/100 [00:06<00:00, 13.84it/s]OE Eval (p=10):  93%|█████████▎| 93/100 [00:07<00:00, 13.53it/s]OE Eval (p=10):  96%|█████████▌| 96/100 [00:07<00:00, 14.32it/s]OE Eval (p=10):  98%|█████████▊| 98/100 [00:07<00:00, 11.84it/s]OE Eval (p=10): 100%|██████████| 100/100 [00:07<00:00, 10.86it/s]                                                                 2026-03-27 00:16:27,682 - INFO - Evaluated program 340a6277-d67e-4981-b456-25be697d46e7 in 10.90s: combined_score=0.7400, length=41.0000
+2026-03-27 00:16:27,684 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:16:27,689 - INFO - Island 2 MAP-Elites cell improved: {'length': 0} (fitness: 0.720 -> 0.740)
+2026-03-27 00:16:27,689 - INFO - Iteration 18: Program 340a6277-d67e-4981-b456-25be697d46e7 (parent: c2d4df9a-e33e-474b-bfff-45c9e1e78c04) completed in 11.89s
+2026-03-27 00:16:27,689 - INFO - Metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:16:27,689 - INFO - Checkpoint interval reached at iteration 18
+2026-03-27 00:16:27,689 - INFO - Island Status:
+2026-03-27 00:16:27,689 - INFO -    Island 0: 8 programs, best=0.7400, avg=0.6488, diversity=20.15, gen=6 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:16:27,689 - INFO -    Island 1: 6 programs, best=0.7400, avg=0.7117, diversity=10.53, gen=6 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:16:27,689 - INFO -  * Island 2: 5 programs, best=0.7400, avg=0.6940, diversity=13.07, gen=6 (best: 340a6277-d67e-4981-b456-25be697d46e7)
+2026-03-27 00:16:27,691 - INFO - Saved database with 21 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_18
+2026-03-27 00:16:27,692 - INFO - Saved best program at checkpoint 18 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:16:27,692 - INFO - Saved checkpoint at iteration 18 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_18
+[OpenEvolve] Accuracy: 0.740 | Best: 0.800 | Total Calls: 2280 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:12,  1.48it/s]OE Eval (p=10):  25%|██▌       | 5/20 [00:00<00:01,  7.67it/s]OE Eval (p=10):  40%|████      | 8/20 [00:01<00:01, 10.01it/s]OE Eval (p=10):  60%|██████    | 12/20 [00:01<00:00, 11.24it/s]OE Eval (p=10):  70%|███████   | 14/20 [00:01<00:00,  9.53it/s]                                                               [OpenEvolve] Accuracy: 0.600 | Best: 0.800 | Total Calls: 2300 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<00:49,  1.98it/s]OE Eval (p=10):   2%|▏         | 2/100 [00:00<00:33,  2.89it/s]OE Eval (p=10):   8%|▊         | 8/100 [00:00<00:07, 11.96it/s]OE Eval (p=10):  11%|█         | 11/100 [00:01<00:06, 14.40it/s]OE Eval (p=10):  13%|█▎        | 13/100 [00:45<08:32,  5.90s/it]OE Eval (p=10):  37%|███▋      | 37/100 [00:54<01:26,  1.38s/it]                                                                2026-03-27 00:17:31,928 - INFO - Evaluated program 0001461d-136e-4165-8624-8ba3e02eea33 in 57.17s: combined_score=0.6400, length=427.0000
+2026-03-27 00:17:31,930 - INFO - Sampled model: openai/gpt-oss-20b
+2026-03-27 00:17:31,938 - INFO - Iteration 19: Program 0001461d-136e-4165-8624-8ba3e02eea33 (parent: 97cf0ec2-e7d8-48e3-a06d-4eaa2e31bbaa) completed in 64.25s
+2026-03-27 00:17:31,938 - INFO - Metrics: combined_score=0.6400, length=427.0000
+2026-03-27 00:17:31,939 - INFO - Checkpoint interval reached at iteration 19
+2026-03-27 00:17:31,939 - INFO - Island Status:
+2026-03-27 00:17:31,939 - INFO -  * Island 0: 9 programs, best=0.7400, avg=0.6478, diversity=34.30, gen=7 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:17:31,939 - INFO -    Island 1: 6 programs, best=0.7400, avg=0.7117, diversity=10.53, gen=6 (best: 24d64d95-2bfc-4d2f-99d4-c550a04d9fbb)
+2026-03-27 00:17:31,939 - INFO -    Island 2: 5 programs, best=0.7400, avg=0.6940, diversity=13.07, gen=6 (best: 340a6277-d67e-4981-b456-25be697d46e7)
+2026-03-27 00:17:31,941 - INFO - Saved database with 22 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_19
+2026-03-27 00:17:31,941 - INFO - Saved best program at checkpoint 19 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:17:31,941 - INFO - Saved checkpoint at iteration 19 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_19
+[OpenEvolve] Accuracy: 0.640 | Best: 0.800 | Total Calls: 2400 (Tasks: 100)
+OE Eval (p=10):   0%|          | 0/20 [00:00<?, ?it/s]OE Eval (p=10):   5%|▌         | 1/20 [00:00<00:08,  2.17it/s]OE Eval (p=10):  10%|█         | 2/20 [00:01<00:09,  1.88it/s]OE Eval (p=10):  40%|████      | 8/20 [00:01<00:01,  8.77it/s]OE Eval (p=10):  65%|██████▌   | 13/20 [00:01<00:00, 14.02it/s]OE Eval (p=10):  80%|████████  | 16/20 [00:01<00:00, 10.95it/s]                                                               [OpenEvolve] Accuracy: 0.800 | Best: 0.800 | Total Calls: 2420 (Tasks: 20)
+OE Eval (p=10):   0%|          | 0/100 [00:00<?, ?it/s]OE Eval (p=10):   1%|          | 1/100 [00:00<00:54,  1.82it/s]OE Eval (p=10):   2%|▏         | 2/100 [00:00<00:33,  2.95it/s]OE Eval (p=10):   7%|▋         | 7/100 [00:01<00:11,  8.12it/s]OE Eval (p=10):  11%|█         | 11/100 [00:01<00:09,  9.82it/s]OE Eval (p=10):  16%|█▌        | 16/100 [00:01<00:06, 13.57it/s]OE Eval (p=10):  20%|██        | 20/100 [00:01<00:04, 16.98it/s]OE Eval (p=10):  23%|██▎       | 23/100 [00:02<00:05, 14.12it/s]OE Eval (p=10):  25%|██▌       | 25/100 [00:02<00:10,  7.43it/s]OE Eval (p=10):  35%|███▌      | 35/100 [00:03<00:04, 13.26it/s]OE Eval (p=10):  41%|████      | 41/100 [00:03<00:03, 15.13it/s]OE Eval (p=10):  45%|████▌     | 45/100 [00:03<00:03, 15.57it/s]OE Eval (p=10):  47%|████▋     | 47/100 [00:04<00:05,  9.12it/s]OE Eval (p=10):  55%|█████▌    | 55/100 [00:04<00:03, 14.85it/s]OE Eval (p=10):  59%|█████▉    | 59/100 [00:04<00:02, 17.33it/s]OE Eval (p=10):  62%|██████▏   | 62/100 [00:04<00:02, 16.92it/s]OE Eval (p=10):  65%|██████▌   | 65/100 [00:05<00:02, 11.97it/s]OE Eval (p=10):  72%|███████▏  | 72/100 [00:05<00:01, 14.44it/s]OE Eval (p=10):  77%|███████▋  | 77/100 [00:05<00:01, 17.39it/s]OE Eval (p=10):  80%|████████  | 80/100 [00:06<00:01, 17.79it/s]OE Eval (p=10):  83%|████████▎ | 83/100 [00:06<00:01, 14.02it/s]OE Eval (p=10):  85%|████████▌ | 85/100 [00:06<00:01, 11.27it/s]OE Eval (p=10):  91%|█████████ | 91/100 [00:07<00:00, 11.79it/s]OE Eval (p=10):  97%|█████████▋| 97/100 [00:07<00:00, 12.89it/s]                                                                2026-03-27 00:17:43,477 - INFO - Evaluated program 2ee37300-fa34-453b-97c9-f855d2a682e3 in 10.36s: combined_score=0.7400, length=41.0000
+2026-03-27 00:17:43,487 - INFO - Island 1 MAP-Elites cell improved: {'length': 0} (fitness: 0.730 -> 0.740)
+2026-03-27 00:17:43,487 - INFO - Iteration 20: Program 2ee37300-fa34-453b-97c9-f855d2a682e3 (parent: df39cd46-f800-4322-a9b5-0004294386a6) completed in 11.55s
+2026-03-27 00:17:43,487 - INFO - Metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:17:43,487 - INFO - Checkpoint interval reached at iteration 20
+2026-03-27 00:17:43,487 - INFO - Island Status:
+2026-03-27 00:17:43,487 - INFO -    Island 0: 9 programs, best=0.7400, avg=0.6478, diversity=34.30, gen=7 (best: 69d12916-b697-48cf-8ee4-d13bf7f321bd)
+2026-03-27 00:17:43,487 - INFO -  * Island 1: 6 programs, best=0.7400, avg=0.7133, diversity=10.53, gen=7 (best: 2ee37300-fa34-453b-97c9-f855d2a682e3)
+2026-03-27 00:17:43,487 - INFO -    Island 2: 5 programs, best=0.7400, avg=0.6940, diversity=13.07, gen=6 (best: 340a6277-d67e-4981-b456-25be697d46e7)
+2026-03-27 00:17:43,489 - INFO - Saved database with 23 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_20
+2026-03-27 00:17:43,489 - INFO - Saved best program at checkpoint 20 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:17:43,489 - INFO - Saved checkpoint at iteration 20 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_20
+2026-03-27 00:17:43,489 - INFO - ✅ Evolution completed - Maximum iterations reached
+2026-03-27 00:17:43,492 - INFO - Saved database with 23 programs to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_20
+2026-03-27 00:17:43,492 - INFO - Saved best program at checkpoint 20 with metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:17:43,492 - INFO - Saved checkpoint at iteration 20 to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_20
+[OpenEvolve] Accuracy: 0.740 | Best: 0.800 | Total Calls: 2520 (Tasks: 100)
+2026-03-27 00:17:43,527 - INFO - Stopped process pool
+2026-03-27 00:17:43,527 - INFO - Using tracked best program: 69d12916-b697-48cf-8ee4-d13bf7f321bd
+2026-03-27 00:17:43,528 - INFO - Evolution complete. Best program has metrics: combined_score=0.7400, length=41.0000
+2026-03-27 00:17:43,528 - INFO - Saved best program to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/best/best_program.txt with program info to prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/best/best_program_info.json
+
+Evolution complete!
+Best program metrics:
+  combined_score: 0.7400
+  length: 41.0000
+
+Latest checkpoint saved at: prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_20
+To resume, use: --checkpoint prompt_opt/results/openevolve_gpt-oss-20b/openevolve_2/checkpoints/checkpoint_20
