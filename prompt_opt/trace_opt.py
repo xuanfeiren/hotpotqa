@@ -34,10 +34,12 @@ torch.manual_seed(10)
 
 API_BASE = "https://generativelanguage.googleapis.com/v1beta/openai/"
 MODEL_NAME = "gemini-2.5-flash-lite"
-# os.environ["TRACE_LITELLM_MODEL"] = "gemini/gemini-2.5-flash-lite"
-os.environ["TRACE_CUSTOMLLM_URL"] = "http://127.0.0.1:8000/v1"
-os.environ["TRACE_DEFAULT_LLM_BACKEND"] = "CustomLLM"
-os.environ["TRACE_CUSTOMLLM_MODEL"] = "openai/gpt-oss-20b"
+# Use gemini-2.5-flash-lite for the Trace optimizer backend (proposer/summarizer).
+os.environ["TRACE_LITELLM_MODEL"] = "gemini/gemini-2.5-flash-lite"
+# --- gpt-oss-20b (open-source) backend, kept for reference; disabled. ---
+# os.environ["TRACE_CUSTOMLLM_URL"] = "http://127.0.0.1:8000/v1"
+# os.environ["TRACE_DEFAULT_LLM_BACKEND"] = "CustomLLM"
+# os.environ["TRACE_CUSTOMLLM_MODEL"] = "openai/gpt-oss-20b"
 
 
 OBJECTIVE = """You are an expert in agent prompt optimization for HotpotQA (multi-hop reasoning). Questions require reasoning over information spread across multiple context paragraphs. Your goal is to optimize meta_instructions described in #Variables for an agent.
@@ -197,8 +199,9 @@ def main():
 
     args = parser.parse_args()
     
-    # Update output directory based on run_num
-    if args.run_num > 1 or args.output_dir == "prompt_opt/results/trace":
+    # Update output directory based on run_num, but ONLY when the user has not
+    # explicitly customised --output_dir (i.e., it still equals the default).
+    if args.output_dir == "prompt_opt/results/trace":
         args.output_dir = f"prompt_opt/results/trace_{args.run_num}"
 
     # Ensure a fresh start: backup output directory if it exists
@@ -222,17 +225,24 @@ def main():
         "inputs": all_tasks[:args.num_train_samples],
         "infos": all_tasks[:args.num_train_samples],
     }
-    validate_dataset = {
-        "inputs": all_tasks[:args.num_validate_samples],
-        "infos": all_tasks[:args.num_validate_samples],
-    }
+    # If num_validate_samples == 0, disable validate_dataset entirely so that
+    # PrioritySearch sets use_prev_batch=True and children are validated on the
+    # SAME minibatch their parents were sampled on (same exact data points).
+    # This is required for the pairwise validation experiment.
+    if args.num_validate_samples > 0:
+        validate_dataset = {
+            "inputs": all_tasks[:args.num_validate_samples],
+            "infos": all_tasks[:args.num_validate_samples],
+        }
+    else:
+        validate_dataset = None
     test_dataset = {
         "inputs": all_tasks[:args.num_test_samples],
         "infos": all_tasks[:args.num_test_samples],
     }
 
     print(f"Training samples: {len(train_dataset['inputs'])}")
-    print(f"Validation samples: {len(validate_dataset['inputs'])}")
+    print(f"Validation samples: {len(validate_dataset['inputs']) if validate_dataset is not None else 0}")
     print(f"Test samples: {len(test_dataset['inputs'])}")
 
 
@@ -369,6 +379,10 @@ def main():
     print(f"  Use best candidate to explore: {args.use_best_candidate_to_explore}")
 
     start_time = time.time()
+
+    # Pairwise validation logging: stream (parent_score, child_score) pair data
+    # to a jsonl in the run's output directory.
+    algorithm._parent_child_pairs_path = os.path.join(args.output_dir, "parent_child_pairs.jsonl")
 
     try:
         algorithm.train(**train_params)
